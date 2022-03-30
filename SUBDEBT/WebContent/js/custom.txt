@@ -1,0 +1,413 @@
+
+
+$(document).ready(function(){
+   
+//$(".u-lenderdetails h4 span:nth-of-type(2)").addClass("rejected");
+
+$("#btnOtp").click(function(){
+   // alert("as");
+    $(".showOtp").css("display", "block");
+});
+
+$("#btnactive").click(function(){
+  var $button= $("#btnactive");
+ if($button.text()=='Active'){
+   $("#btnactive").css("background-color", "#d20000");
+   $("#btnactive").text("Inactive");       
+ }
+ else {
+        $("#btnactive").css('background-color', '#007900');
+        $("#btnactive").text("Active");       
+    }    
+});
+$("#btnactive1").click(function(){
+  var $button= $("#btnactive1");
+ if($button.text()=='Active'){
+   $("#btnactive1").css("background-color", "#d20000");
+   $("#btnactive1").text("Inactive");       
+ }
+ else {
+        $("#btnactive1").css('background-color', '#007900');
+        $("#btnactive1").text("Active");       
+    }    
+});
+$("#btnactive2").click(function(){
+  var $button= $("#btnactive2");
+ if($button.text()=='Active'){
+   $("#btnactive2").css("background-color", "#d20000");
+   $("#btnactive2").text("Inactive");       
+ }
+ else {
+        $("#btnactive2").css('background-color', '#007900');
+        $("#btnactive2").text("Active");       
+    }    
+});
+ 
+$(".btn-process").click(function(){
+  var $buttonprocess= $(".btn-process");
+  $(".eligibleproposal,.approvedproposal,.rejectedproposal").addClass("d-none");
+  $(".eligibleproposal,.approvedproposal,.rejectedproposal").removeClass("d-block");
+  $(".processproposal").removeClass("d-none");
+  $(".processproposal").addClass("d-block");
+
+/* if($button.text()=='Active'){
+   $("#btnactive2").css("background-color", "#d20000");
+   $("#btnactive2").text("Inactive");       
+ }
+ else {
+        $("#btnactive2").css('background-color', '#007900');
+        $("#btnactive2").text("Active");       
+    }  */  
+});
+$(".btn-all").click(function(){
+ 
+  $(".processproposal,.approvedproposal,.rejectedproposal").addClass("d-none");
+  $(".processproposal,.approvedproposal,.rejectedproposal").removeClass("d-block");
+  $(".eligibleproposal").removeClass("d-none");
+  $(".eligibleproposal").addClass("d-block");
+});
+$(".btn-accepted ").click(function(){ 
+  $(".processproposal,.eligibleproposal,.rejectedproposal").addClass("d-none");
+  $(".processproposal,.eligibleproposal,.rejectedproposal").removeClass("d-block");
+  $(".approvedproposal").removeClass("d-none");
+  $(".approvedproposal ").addClass("d-block");
+});
+$(".btn-tbreject  ").click(function(){ 
+  $(".processproposal,.eligibleproposal,.approvedproposal").addClass("d-none");
+  $(".processproposal,.eligibleproposal,.approvedproposal").removeClass("d-block");
+  $(".rejectedproposal").removeClass("d-none");
+  $(".rejectedproposal ").addClass("d-block");
+});
+
+
+/* btn-all
+ btn-process
+ btn-accepted 
+ btn-tbreject*/
+
+$("#frmblk").click(function(){
+  $("#usrblk").css("display", "none");
+});
+
+$("#frmsingle").click(function(){
+  $("#usrsingle").css("display", "none");
+});
+
+$("#btnsingleuser").click(function(){
+  $("#usrsingle").css("display", "block");
+  $("#usrblk").css("display", "none");    
+});
+
+$("#btnblkuser").click(function(){
+  $("#usrblk").css("display", "block");
+  $("#usrsingle").css("display", "none");    
+});
+
+ $('[data-toggle=tooltip]').tooltip();
+
+  $(".sidebararrow").click(function(){
+ // alert('ok');
+    $(this).toggleClass("active");
+    $(".sidebarnav").toggleClass("active");
+    /*.css("transform"," translateX(0px)")*/    
+  }); 
+
+ $("#itrFiled").click(function(){
+ 	// alert('ok');
+    $( "#itrFiled" ).focus().addClass('u-innerboxactive');
+    $( "#itrNotFiled" ).focus().removeClass('u-innerboxactive');
+  });
+  $("#itrNotFiled").click(function(){
+ 	alert('ok');
+    $( "#itrFiled" ).focus().removeClass('u-innerboxactive');
+    $( "#itrNotFiled" ).focus().addClass('u-innerboxactive');
+  });
+
+  $("#extBusiness").click(function(){
+  // alert('ok');
+    $( "#extBusiness" ).focus().addClass('u-innerboxactive');
+    $( "#newBusiness" ).focus().removeClass('u-innerboxactive');
+  });
+  $("#newBusiness").click(function(){
+  alert('ok');
+    $( "#extBusiness" ).focus().removeClass('u-innerboxactive');
+    $( "#newBusiness" ).focus().addClass('u-innerboxactive');
+  });
+
+  $(".targetDiv").hide();
+$(".showSingle").click(function() {
+  debugger;
+   
+    $(".targetDiv").hide().removeClass('uslideup');
+    $('#div' + $(this).attr('target')).show().addClass('uslideup');
+  });
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 135) {
+      
+        $('.sidebararrow,.sidebarnav').addClass('fixedsidebar');
+          $('.scrollup').addClass('ufadeIn');        
+
+    } else {
+        $('.sidebararrow,.sidebarnav').removeClass('fixedsidebar');
+        $('.scrollup').removeClass('ufadeIn');         
+    }
+});
+$('.scrollup').on("click",function(){
+  
+     $("html, body").scrollTop(0);
+     //$("html, body").animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+
+$(".js-irs-12 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-12 span.irs-grid .js-grid-text-5").text("5 & above");
+$(".js-irs-11 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-11 span.irs-grid .js-grid-text-4").text("100 & above");
+$(".js-irs-10 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-10 span.irs-grid .js-grid-text-4").text("400 & above");
+$(".js-irs-9 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-9 span.irs-grid .js-grid-text-4").text("400 & above");
+$(".js-irs-8 span.irs-grid .js-grid-text-4").text("30 & above");
+$(".js-irs-7 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-7 span.irs-grid .js-grid-text-4").text("10,00,00,000 & above");
+$(".js-irs-6 span.irs-grid .js-grid-text-0").text("0 & below");
+$(".js-irs-6 span.irs-grid .js-grid-text-4").text("100 & above");
+$(".js-irs-5 span.irs-grid .js-grid-text-4").text("500 & above");
+$(".js-irs-4 span.irs-grid .js-grid-text-4").text("500 & above");
+$(".js-irs-2 span.irs-grid .js-grid-text-4").text("30 & above");
+
+
+
+$('.datepicker').datepicker({
+    format: 'dd/mm/yyyy',
+    autoclose: true 
+});
+
+
+
+
+/* $(".u-branch").hide();
+$("#btnproceed1").click(function() {
+   // $(this).next(".u-branch").slideToggle();
+    $(".btnproceed1").slideToggle();
+    $(".btnproceed2").slideUp();
+});
+$("#btnproceed2").click(function() {
+   // $(this).next(".u-branch").slideToggle();
+    $(".btnproceed2").slideToggle();
+    $(".btnproceed1").slideUp();
+})*/
+
+/*alert("check");
+ 
+$('.u-formMenu li').sibling().next().addClass("active");
+$('.u-formMenu li').siblings().prevAll().removeClass("active").next().addClass("bg-darkcyan");  
+$('.u-formMenu li:last-child').removeClass("active bg-darkcyan").css("background-color", "green");*/  
+
+
+
+/*if( $('input').val().length > 0 ) {
+   $("input.form-control,select.form-control").prop('disabled', true).addClass('form-data');  
+}
+else{
+  $("input.form-control,select.form-control").prop('disabled', false).removeClass('form-data');
+}*/
+ // $("input.form-control,select.form-control").prop('disabled', true).addClass('form-data');
+ // $("input.form-control,select.form-control").prop('disabled', false).removeClass('form-data');
+
+/*var $divs = $("div.u-bankloanamt") ;
+$('#alphBnt').on('click', function () {
+    var alphabeticallyOrderedDivs = $divs.sort(function (a, b) {
+      //  return $(a).find(".u-banklogo span").text() > $(b).find(".u-banklogo span").text();
+        return $(a).find(".u-banklogo span").text() > $(b).find("u-.banklogo span").text();
+        return $(a).find(".u-bankloanamt p").text() > $(b).find(".u-bankloanamt p").text(); 
+        return $(b).find(".u-bankloanamt p").text() > $(a).find(".u-bankloanamt p").text();        
+        return $(a).find(".u-bankemi p").text() > $(b).find(".u-bankemi p").text();
+        return $(a).find(".u-banktenure p").text() > $(b).find(".u-banktenure p").text();
+        return $(a).find(".u-bankfee p").text() > $(b).find(".u-bankfee p").text();
+        return $(a).find(".u-bankroi p").text() > $(b).find(".u-bankroi p").text();
+        return $(a).find(".u-bankroi p").text() > $(b).find(".u-bankroi p").text();
+    });
+    $("#u-banksort").html(alphabeticallyOrderedDivs);
+
+});*/
+});
+ 
+
+function edit(toggleID,toggleIDs){
+  debugger;
+  // alert('s');
+   var toggleDiv = document.getElementById(toggleID);
+   var toggleDiv1 = document.getElementById(toggleIDs);
+   if(toggleDiv.style.display != "none"){
+    toggleDiv.style.display = 'none';
+    toggleDiv1.style.display ='block';
+   }else{
+    toggleDiv.style.display = 'block';
+    toggleDiv1.style.display ='none';
+    document.getElementById("frmhide").style.display = 'none'; 
+   }
+ };
+ function cancel(toggleID,toggleIDs){
+  //debugger;
+   var toggleDiv = document.getElementById(toggleID);
+   var toggleDiv1 = document.getElementById(toggleIDs);
+   if(toggleDiv.style.display != "none"){
+    toggleDiv.style.display = 'none';
+    toggleDiv1.style.display ='block';
+   
+   }else{
+    toggleDiv.style.display = 'block';
+    toggleDiv1.style.display ='none';
+   }
+ };
+
+/* loan amount check  */
+$(function () {
+
+
+  var addloan = $("#addloan");
+  var extloan = $("#extloan");
+        $("#addloan").click(function () {
+            if ($(this).is(":checked")) {
+                $("#addloanlmt").show();                 
+            } 
+            else if (extloan == false) {
+                $("#addloanlmt").show(); 
+            } 
+             else if (extloan == true) {
+                $("#addloanlmt").show(); 
+            }  
+            else {
+                $("#addloanlmt").hide();                
+            }
+        });
+        $("#extloan").click(function () {
+
+            if ($(this).is(":checked")) {
+                $("#totalloanlmt").show();   
+                 $("#addloanlmt").show();               
+            }else if (addloan == true) {
+                $("#addloanlmt").show(); 
+            } 
+            else if (extloan == false) {
+                $("#totalloanlmt").hide(); 
+                 $("#addloanlmt").hide();  
+            } 
+            else {
+                $("#totalloanlmt").hide(); 
+                 $("#addloanlmt").hide();                
+            }
+        });
+    });
+
+
+/*-------------Range Slider----------------*/
+
+ 
+ 
+
+   /*  $("#loanlmt").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: 0,
+        max: 200000000,
+        from: 0,
+        to: 200000000, 
+        prefix: "&#8377;",
+
+         onChange: function (data) {
+             from = data.from;
+              to = data.to;
+          $("#loanlmt_input_to").val(to);          
+         // $("#loanlmt").val(data.to_pretty  ); 
+          // console.log(data.slider);            
+        },
+                
+    }); */
+
+/* function edit(frmshow){
+  debugger;
+  document.getElementById("frm-show").style.display = 'none';
+  document.getElementById("frm-hide").style.display = 'block'; 
+}
+function cancel(frmhide){
+  debugger;
+  document.getElementById("frm-show").style.display = 'block';
+  document.getElementById("frm-hide").style.display = 'none';  
+} 
+function edit(frmshow1){
+  debugger;
+  document.getElementById("frm-show1").style.display = 'none';
+  document.getElementById("frm-hide1").style.display = 'block'; 
+}
+function cancel(frmhide1){
+  debugger;
+  document.getElementById("frm-show1").style.display = 'block';
+  document.getElementById("frm-hide1").style.display = 'none';  
+} */
+
+/*clock titming with number of days 
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+*/ 
+
+/*function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}*/
+
+/*$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});*/
+
+
+

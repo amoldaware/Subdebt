@@ -1,0 +1,2120 @@
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_0.dtd">
+
+<form-validation>
+
+   <global>
+
+
+      <validator name="validateFileFormat"
+            classname="com.cgtsi.util.Validator"
+               method="validateFileFormat"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFileFormat">
+      </validator>
+
+
+        <validator name="outwardIdValidation"
+            classname="com.cgtsi.util.Validator"
+               method="outwardIdValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="outwardIdValidation">
+      </validator>
+
+        <validator name="inwardIdValidation"
+            classname="com.cgtsi.util.Validator"
+               method="inwardIdValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="inwardIdValidation">
+      </validator>
+
+        <validator name="validateForBank"
+            classname="com.cgtsi.util.Validator"
+               method="validateForBank"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateForBank">
+      </validator>
+
+	          <validator name="validateForChequeNumber"
+            classname="com.cgtsi.util.Validator"
+               method="validateForChequeNumber"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateForChequeNumber">
+      </validator>
+
+	          <validator name="validateForChequeDate"
+            classname="com.cgtsi.util.Validator"
+               method="validateForChequeDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateForChequeDate">
+      </validator>
+
+	          <validator name="validateForChequeIssued"
+            classname="com.cgtsi.util.Validator"
+               method="validateForChequeIssued"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateForChequeIssued">
+      </validator>
+
+        <validator name="checkValueEntryForCheque"
+            classname="com.cgtsi.util.Validator"
+               method="checkValueEntryForCheque"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkValueEntryForCheque">
+      </validator>
+
+        <validator name="checkSubScheme"
+            classname="com.cgtsi.util.Validator"
+               method="checkSubScheme"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkSubScheme">
+
+      </validator>
+
+      <validator name="checkPrivilegesSelected"
+            classname="com.cgtsi.util.Validator"
+               method="checkPrivilegesSelected"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkPrivilegesSelected">
+
+      </validator>
+
+      <validator name="checkRolesAndPrivilegesSelected"
+            classname="com.cgtsi.util.Validator"
+               method="checkRolesAndPrivilegesSelected"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkPrivilegesSelected">
+
+      </validator>
+      
+      <validator name="checkNewAndConfirmPassword"
+            classname="com.cgtsi.util.Validator"
+               method="checkNewAndConfirmPassword"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkNewAndConfirmPassword">
+
+      </validator>
+      
+      <validator name="checkSFCalculationDate"
+            classname="com.cgtsi.util.Validator"
+               method="checkSFCalculationDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="serviceDayAndMonth">
+
+      </validator>
+	  
+      <validator name="validateFromToDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateFromToDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToDates">
+
+      </validator>
+  
+      <!-- Added by sukumar@path to validate the sanctioned date -->
+
+      <validator name="validateSanctionedDate"
+            classname="com.cgtsi.util.Validator"
+               method="validateSanctionedDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToDates">
+
+      </validator>
+    <!-- validation of sanctioned date end part here -->
+
+      <validator name="validateUserLimits"
+            classname="com.cgtsi.util.Validator"
+               method="validateUserLimits"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateUserLimits">
+
+      </validator>
+
+      <validator name="checkIdType"
+            classname="com.cgtsi.util.Validator"
+               method="checkIdType"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkIdType">
+
+      </validator>
+
+	  <validator name="checkWorthForName"
+            classname="com.cgtsi.util.Validator"
+               method="checkWorthForName"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="worthEntered">
+
+      </validator>
+
+	   <validator name="checkConstitution"
+            classname="com.cgtsi.util.Validator"
+               method="checkConstitution"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="constituitionRequired">
+
+      </validator>
+
+	  <validator name="checkDistrict"
+            classname="com.cgtsi.util.Validator"
+               method="checkDistrict"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="districtRequired">
+
+      </validator>
+
+	   <validator name="checkLegalId"
+            classname="com.cgtsi.util.Validator"
+               method="checkLegalId"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="legalIdRequired">
+
+      </validator>
+
+	   <validator name="checkMoreField"
+            classname="com.cgtsi.util.Validator"
+               method="checkMoreField"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="oneFieldRequired">
+
+      </validator>
+
+	   <validator name="checkEntryField"
+            classname="com.cgtsi.util.Validator"
+               method="checkEntryField"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkEntryField">
+
+      </validator>
+	   <validator name="checkCreditField"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditField"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkCreditField">
+
+      </validator>
+	  <validator name="checkOsField"
+            classname="com.cgtsi.util.Validator"
+               method="checkOsField"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkOsField">
+
+      </validator>
+	  <validator name="checkEnhancedTotal"
+            classname="com.cgtsi.util.Validator"
+               method="checkEnhancedTotal"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="enhancedTotalCheck">
+
+      </validator>
+
+	  <validator name="checkValueEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkValueEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkValueEntry">
+
+      </validator>
+
+	 <validator name="checkDBREntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkDBREntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkDBREntry">
+
+      </validator>
+
+	  <validator name="checkCoveredValue"
+            classname="com.cgtsi.util.Validator"
+               method="checkCoveredValue"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkCoveredValue">
+
+      </validator>
+
+	  <validator name="checkWcEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkWcEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkWcEntry">
+
+      </validator>
+
+	  <validator name="checkTcEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkTcEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkTcEntry">
+
+      </validator>
+
+	   <validator name="checkRateValue"
+            classname="com.cgtsi.util.Validator"
+               method="checkRateValue"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkRateValue">
+
+      </validator>
+
+	   <validator name="checkEnhanceValue"
+            classname="com.cgtsi.util.Validator"
+               method="checkEnhanceValue"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkEnhanceValue">
+
+      </validator>
+
+	  <validator name="checkEnhanceEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkEnhanceEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkEnhanceEntry">
+
+      </validator>
+
+	 <validator name="checkSubsidyName"
+            classname="com.cgtsi.util.Validator"
+               method="checkSubsidyName"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkSubsidyName">
+
+      </validator>
+
+	  <validator name="checkMarginMoneyAsTL"
+            classname="com.cgtsi.util.Validator"
+               method="checkMarginMoneyAsTL"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkMarginMoneyAsTL">
+
+      </validator>
+
+	  <validator name="checkAnyOneField"
+            classname="com.cgtsi.util.Validator"
+               method="checkAnyOneField"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkAnyOneField">
+
+      </validator>
+
+	  <validator name="checkClearStatusComments"
+            classname="com.cgtsi.util.Validator"
+               method="checkClearStatusComments"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkClearStatusComments">
+
+      </validator>
+
+	  <validator name="checkDupStatusComments"
+            classname="com.cgtsi.util.Validator"
+               method="checkDupStatusComments"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkDupStatusComments">
+
+      </validator>
+
+	  <validator name="checkIneligibleStatusComments"
+            classname="com.cgtsi.util.Validator"
+               method="checkIneligibleStatusComments"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkIneligibleStatusComments">
+
+      </validator>
+
+	  <validator name="checkIneligibleDupStatusComments"
+            classname="com.cgtsi.util.Validator"
+               method="checkIneligibleDupStatusComments"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkIneligibleDupStatusComments">
+
+      </validator>
+
+	  <validator name="checkStatusSelect"
+            classname="com.cgtsi.util.Validator"
+               method="checkStatusSelect"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkStatusSelect">
+
+      </validator>
+      
+	  <validator name="checkReapproveStatusComments"
+            classname="com.cgtsi.util.Validator"
+               method="checkReapproveStatusComments"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkReapproveStatusComments">
+
+      </validator>
+
+	  <validator name="checkReapproveStatus"
+            classname="com.cgtsi.util.Validator"
+               method="checkReapproveStatus"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkReapproveStatus">
+
+      </validator>
+
+           <!-- added by sukumar@path on 26-06-2010 for validating NPA Effective Dt -->
+      <validator name="validateFromNPACurrentDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateFromNPACurrentDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromCurrentDates">
+
+      </validator>
+
+	   <validator name="validateFromCurrentDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateFromCurrentDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromCurrentDates">
+
+      </validator>
+
+	   <validator name="checkCreditAmtGreater"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtGreater"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkCreditAmtGreater">
+
+      </validator>
+
+	   <validator name="checkDisburseOsEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkDisburseOsEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkDisburseOsEntry">
+
+      </validator>
+
+	  <validator name="checkBankOsEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkBankOsEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkBankOsEntry">
+
+      </validator>
+      
+	  <validator name="checkDefaultRate"
+            classname="com.cgtsi.util.Validator"
+               method="checkDefaultRate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkDefaultRate">
+
+      </validator>      
+
+	  <validator name="validatePromoterEntry"
+            classname="com.cgtsi.util.Validator"
+               method="validatePromoterEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validatePromoterEntry">
+
+      </validator>
+
+	  <validator name="validateMcgfBankEntry"
+            classname="com.cgtsi.util.Validator"
+               method="validateMcgfBankEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateMcgfBankEntry">
+
+      </validator>
+
+	  <validator name="validateFromToEqualDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateFromToEqualDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToEqualDates">
+
+      </validator>
+      
+	<validator name="checkNpaEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkNpaEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkNpaEntry">
+
+      </validator>      
+
+	<validator name="validateAmountValue"
+            classname="com.cgtsi.util.Validator"
+               method="validateAmountValue"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateAmountValue">
+
+      </validator> 
+      
+      <validator name="validateRSFAmountValue"
+            classname="com.cgtsi.util.Validator"
+               method="validateRSFAmountValue"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateAmountValue">
+
+      </validator>      
+
+<!--	<validator name="checkItpanEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkItpanEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkItpanEntry">
+
+      </validator>      
+-->
+	<validator name="checkInstallmentEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkInstallmentEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkInstallmentEntry">
+
+      </validator>      
+
+	<validator name="checkEnhancedAmount"
+            classname="com.cgtsi.util.Validator"
+               method="checkEnhancedAmount"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkEnhancedAmount">
+
+      </validator>      
+
+	<validator name="validateAmtSanctioned"
+            classname="com.cgtsi.util.Validator"
+               method="validateAmtSanctioned"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateAmtSanctioned">
+
+      </validator>      
+
+	<validator name="checkTcConvStatus"
+            classname="com.cgtsi.util.Validator"
+               method="checkTcConvStatus"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkTcConvStatus">
+
+      </validator>      
+
+
+	  	<validator name="checkWcConvStatus"
+            classname="com.cgtsi.util.Validator"
+               method="checkWcConvStatus"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkWcConvStatus">
+
+      </validator>      
+
+	<validator name="checkTcCgpanEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkTcCgpanEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkTcCgpanEntry">
+
+      </validator>      
+
+	<validator name="checkWcCgpanEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkWcCgpanEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkWcCgpanEntry">
+
+      </validator>      
+
+	<validator name="checkAmtDisbursedGreater"
+            classname="com.cgtsi.util.Validator"
+               method="checkAmtDisbursedGreater"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkAmtDisbursedGreater">
+
+      </validator>
+      
+	<validator name="checkNPAValidations"
+            classname="com.cgtsi.util.Validator"
+               method="checkNPAValidations"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkNPAValidations">
+
+      </validator>      
+
+<!--	<validator name="checkCoveredValueOnView"
+            classname="com.cgtsi.util.Validator"
+               method="checkCoveredValueOnView"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkCoveredValueOnView">
+
+      </validator>      
+-->      
+
+<!-- ********************************************************************* -->
+     <validator name="validateSubSchemeParameters"
+	             classname="com.cgtsi.util.Validator"
+		     method="validateSubSchemeParameters"
+		     methodParams="java.lang.Object,
+				   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+		                   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+		                   msg="subSchemeErrorMessage">
+     </validator>
+
+	 <validator name="validateCgpanOrSSi"
+            classname="com.cgtsi.util.Validator"
+               method="validateCgpanOrSSi"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateCgpanOrSSi">
+      </validator>
+      
+      <validator name="validateBorrowerIdOrCgpan"
+                        classname="com.cgtsi.util.Validator"
+                           method="validateBorrowerIdOrCgpan"
+                     methodParams="java.lang.Object,
+                                   org.apache.commons.validator.ValidatorAction,
+                                   org.apache.commons.validator.Field,
+                                   org.apache.struts.action.ActionErrors,
+                                   javax.servlet.http.HttpServletRequest"
+                              msg="validateBorrowerIdOrCgpan">
+            </validator>
+            
+            <validator name="validateOTSAmounts"
+                              classname="com.cgtsi.util.Validator"
+                              method="validateOTSAmounts"
+                              methodParams="java.lang.Object,
+				 org.apache.commons.validator.ValidatorAction,
+				 org.apache.commons.validator.Field,
+				 org.apache.struts.action.ActionErrors,
+				 javax.servlet.http.HttpServletRequest"
+				 msg="validateOTSAmounts">
+            </validator>
+            
+            <validator name="validateProposedAmntSacrificed"
+                               classname="com.cgtsi.util.Validator"
+                               method="validateProposedAmntSacrificed"
+                               methodParams="java.lang.Object,
+				     org.apache.commons.validator.ValidatorAction,
+				     org.apache.commons.validator.Field,
+				     org.apache.struts.action.ActionErrors,
+				     javax.servlet.http.HttpServletRequest"
+				     msg="validateProposedAmntSacrificed">
+            </validator>
+            
+		<validator name="validateSaveOTSDetails"
+				   classname="com.cgtsi.util.Validator"
+				   method="validateSaveOTSDetails"
+				   methodParams="java.lang.Object,
+				     org.apache.commons.validator.ValidatorAction,
+				     org.apache.commons.validator.Field,
+				     org.apache.struts.action.ActionErrors,
+				     javax.servlet.http.HttpServletRequest"
+				     msg="validateSaveOTSDetails">
+		</validator>
+            
+            <validator name="validateOsAmntOnDateForOTS"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateOsAmntOnDateForOTS"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateOsAmntOnDateForOTS">
+      </validator>
+                      
+            <validator name="validateClaimProcessingDtls"
+      			     classname="com.cgtsi.util.Validator"
+      			     method="validateClaimProcessingDtls"
+      			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+      				   org.apache.commons.validator.Field,
+      				   org.apache.struts.action.ActionErrors,
+      				   javax.servlet.http.HttpServletRequest"
+      				   msg="validateClaimProcessingDtls">
+            </validator>      
+            
+            <validator name="validateDisplayClaimApproval"
+      			     classname="com.cgtsi.util.Validator"
+      			     method="validateDisplayClaimApproval"
+      			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+      				   org.apache.commons.validator.Field,
+      				   org.apache.struts.action.ActionErrors,
+      				   javax.servlet.http.HttpServletRequest"
+      				   msg="validateDisplayClaimApproval">
+            </validator>                      
+                  
+                  <validator name="validateRecoveryOrOTSFlag"
+      			     classname="com.cgtsi.util.Validator"
+      			     method="validateRecoveryOrOTSFlag"
+      			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+      				   org.apache.commons.validator.Field,
+      				   org.apache.struts.action.ActionErrors,
+      				   javax.servlet.http.HttpServletRequest"
+      				   msg="validateRecoveryOrOTSFlag">
+            </validator>      
+            
+	      <validator name="validateMemIdAndBid"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateMemIdAndBid"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateMemIdAndBid">
+	     </validator>
+	     
+	     <validator name="validateAllandSpecificFlag"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateAllandSpecificFlag"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateAllandSpecificFlag">
+             </validator>  
+             
+		   <validator name="checkLegalForumName"
+		    classname="com.cgtsi.util.Validator"
+		       method="checkLegalForumName"
+		 methodParams="java.lang.Object,
+			       org.apache.commons.validator.ValidatorAction,
+			       org.apache.commons.validator.Field,
+			       org.apache.struts.action.ActionErrors,
+			       javax.servlet.http.HttpServletRequest"
+			  msg="legalForumRequired">
+
+	      </validator>             
+             
+		  <validator name="validateTCandWCDetails"
+		     classname="com.cgtsi.util.Validator"
+		     method="validateTCandWCDetails"
+		     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+			   org.apache.commons.validator.Field,
+			   org.apache.struts.action.ActionErrors,
+			   javax.servlet.http.HttpServletRequest"
+			   msg="validateTCandWCDetails">
+		  </validator>
+             
+             <!--
+	     <validator name="validateTCDetailsFields"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateTCDetailsFields"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateTCDetailsFields">
+		  </validator>      
+
+		    <validator name="validateWCDetailsFields"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateWCDetailsFields"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateWCDetailsFields">
+		  </validator>
+                 
+		  <validator name="validateSPGDetailsAsOnSanctionOfCredit"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSPGDetailsAsOnSanctionOfCredit"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSPGDetailsAsOnSanctionOfCredit">
+		  </validator>
+
+		  <validator name="validateSPGDetailsAsOnNPA"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSPGDetailsAsOnNPA"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSPGDetailsAsOnNPA">
+		  </validator>
+
+		  <validator name="validateSPGDetailsAsOnClmLodgemnt"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSPGDetailsAsOnClmLodgemnt"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSPGDetailsAsOnClmLodgemnt">
+		  </validator>
+                  -->
+		  <validator name="validateSPGDetails"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSPGDetails"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSPGDetails">
+		  </validator>                  
+
+		  <validator name="validateSPGDetailsAsOnSecondLodgement"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSPGDetailsAsOnSecondLodgement"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSPGDetailsAsOnSecondLodgement">
+		  </validator>                  
+
+		  <validator name="validateRecoveryDetails"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateRecoveryDetails"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateRecoveryDetails">
+		  </validator>
+
+		  <validator name="validateClaimAmounts"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateClaimAmounts"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateClaimAmounts">
+		  </validator>
+
+		  <validator name="validateSettlementDetails"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateSettlementDetails"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateSettlementDetails">
+		  </validator>
+		  
+                 <validator name="validateVoucherIds"
+			     classname="com.cgtsi.util.Validator"
+			     method="validateVoucherIds"
+			     methodParams="java.lang.Object,                                                   org.apache.commons.validator.ValidatorAction,
+				   org.apache.commons.validator.Field,
+				   org.apache.struts.action.ActionErrors,
+				   javax.servlet.http.HttpServletRequest"
+				   msg="validateVoucherIds">
+		  </validator>		  
+
+	<validator name="validateAppFilingLimitRule"
+		classname="com.cgtsi.util.Validator"
+		method="validateAppFilingLimitRule"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="zeroAppFilingPeriodNotAllowed">
+
+	</validator>
+
+
+	<!-- *********** START OF Admin,common,reg(rp14480) ***********-->
+
+
+	<validator name="bankRequired"
+            classname="com.cgtsi.util.Validator"
+               method="bankRequired"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="bankRequired">
+
+      </validator>
+
+	  <validator name="zoneRequired"
+            classname="com.cgtsi.util.Validator"
+               method="zoneRequired"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="zoneRequired">
+
+      </validator>
+
+	  <validator name="branchRequired"
+            classname="com.cgtsi.util.Validator"
+               method="branchRequired"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="branchRequired">
+
+      </validator>
+
+	<validator name="validateIfZero"
+		classname="com.cgtsi.util.Validator"
+		method="validateIfZero"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="zeroNotAllowed">
+
+	</validator>
+
+	<validator name="checkReportingZoneSelected"
+            classname="com.cgtsi.util.Validator"
+               method="checkReportingZoneSelected"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="reportingZoneSelected">
+      </validator>
+
+	  <validator name="defineOrgStr"
+            classname="com.cgtsi.util.Validator"
+               method="defineOrgStr"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="defineOrgStr">
+      </validator>
+
+	  <validator name="selectZoneForBranch"
+            classname="com.cgtsi.util.Validator"
+               method="selectZoneForBranch"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="selectZoneForBranch">
+      </validator>
+
+
+	<validator name="multiboxRequired"
+		classname="com.cgtsi.util.Validator"
+		method="multiboxRequired"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="multibox">
+
+	</validator>
+
+	<validator name="bankIdNotZeros"
+		classname="com.cgtsi.util.Validator"
+		method="bankIdNotZeros"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="bankIdNotZeros">
+
+	</validator>
+
+	<validator name="anyOneRequired"
+		classname="com.cgtsi.util.Validator"
+		method="anyOneRequired"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="errors.required">
+	</validator>
+
+	<validator name="plrChosen"
+		classname="com.cgtsi.util.Validator"
+		method="plrChosen"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="BPLRRequired">
+
+	</validator>
+
+	<validator name="plrChosenInModify"
+		classname="com.cgtsi.util.Validator"
+		method="plrChosenInModify"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="BPLRRequired">
+
+	</validator>
+
+	<validator name="checkAlreadyExist"
+		classname="com.cgtsi.util.Validator"
+		method="checkAlreadyExist"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="checkAlreadyExist">
+
+	</validator>
+
+	<validator name="checkAlreadyExistInCombo"
+		classname="com.cgtsi.util.Validator"
+		method="checkAlreadyExistInCombo"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="checkAlreadyExistInCombo">
+
+	</validator>
+
+<!-- ***********END OF  Admin,common,reg(rp14480) ***********-->
+
+
+
+
+<!-- ***********For Guarantee Maintenance ***********-->
+	<validator name="validateBIdOrCgpanOrBName"
+		classname="com.cgtsi.util.Validator"
+		method="validateBIdOrCgpanOrBName"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateBIdOrCgpanOrBName">
+	</validator>
+
+	<validator name="validateIdsForSchedule"
+		classname="com.cgtsi.util.Validator"
+		method="validateIdsForSchedule"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateIdsForSchedule">
+	</validator>
+
+	<validator name="validateIdsForModifyBorrDtl"
+		classname="com.cgtsi.util.Validator"
+		method="validateIdsForModifyBorrDtl"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateIdsForModifyBorrDtl">
+	</validator>
+
+	<validator name="validateTcOutstanding"
+		classname="com.cgtsi.util.Validator"
+		method="validateTcOutstanding"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateTcOutstanding">
+	</validator>
+
+	<validator name="validateTcOutstandings"
+		classname="com.cgtsi.util.Validator"
+		method="validateTcOutstandings"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateTcOutstandings">
+	</validator>
+
+	<validator name="validateWcOutstanding"
+		classname="com.cgtsi.util.Validator"
+		method="validateWcOutstanding"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateWcOutstanding">
+	</validator>
+
+	<validator name="validateWcOutstandings"
+		classname="com.cgtsi.util.Validator"
+		method="validateWcOutstandings"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateWcOutstandings">
+	</validator>
+
+<!--	<validator name="validateTcInterestOutstandingAmount"
+		classname="com.cgtsi.util.Validator"
+		method="validateTcInterestOutstandingAmount"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateTcInterestOutstandingAmount">
+	</validator> 
+-->
+
+	<validator name="validateDisbursementAmount"
+		classname="com.cgtsi.util.Validator"
+		method="validateDisbursementAmount"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateDisbursementAmount">
+	</validator>
+
+	<validator name="validateDisbursementAmounts"
+		classname="com.cgtsi.util.Validator"
+		method="validateDisbursementAmounts"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateDisbursementAmounts">
+	</validator>
+	
+
+<!--	<validator name="validateDisbursementDate"
+		classname="com.cgtsi.util.Validator"
+		method="validateDisbursementDate"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateDisbursementDate">
+	</validator> -->
+
+	<validator name="validateRepaymentAmount"
+		classname="com.cgtsi.util.Validator"
+		method="validateRepaymentAmount"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRepaymentAmount">
+	</validator>
+
+	<validator name="validateRepaymentAmounts"
+		classname="com.cgtsi.util.Validator"
+		method="validateRepaymentAmounts"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRepaymentAmounts">
+	</validator>
+
+
+<!--	<validator name="validateRepaymentDate"
+		classname="com.cgtsi.util.Validator"
+		method="validateRepaymentDate"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRepaymentDate">
+	</validator>
+-->
+	
+	<validator name="validateRepaymentSchedule"
+		classname="com.cgtsi.util.Validator"
+		method="validateRepaymentSchedule"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRepaymentSchedule">
+	</validator>
+
+	<validator name="validateIdsForShifting"
+		classname="com.cgtsi.util.Validator"
+		method="validateIdsForShifting"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateIdsForShifting">
+	</validator>
+
+	<validator name="validateRecProcs"
+		classname="com.cgtsi.util.Validator"
+		method="validateRecProcs"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRecProcs">
+	</validator>
+
+	<validator name="validateOneRowRecProcs"
+		classname="com.cgtsi.util.Validator"
+		method="validateOneRowRecProcs"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateOneRowRecProcs">
+	</validator>
+
+
+
+	<validator name="validateRecProcDate"
+		classname="com.cgtsi.util.Validator"
+		method="validateRecProcDate"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateRecProcDate">
+	</validator>
+
+	<validator name="validateIdsForClosure"
+		classname="com.cgtsi.util.Validator"
+		method="validateIdsForClosure"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="validateIdsForClosure">
+	</validator> 
+
+	<validator name="checkForClosure"
+		classname="com.cgtsi.util.Validator"
+		method="checkForClosure"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="checkForClosure">
+	</validator> 
+
+	<validator name="checkForCl"
+		classname="com.cgtsi.util.Validator"
+		method="checkForCl"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="checkForCl">
+	</validator> 
+
+
+	<validator name="checkNpaDateRequired"
+		classname="com.cgtsi.util.Validator"
+		method="checkNpaDateRequired"
+		methodParams="java.lang.Object,
+		org.apache.commons.validator.ValidatorAction,
+		org.apache.commons.validator.Field,
+		org.apache.struts.action.ActionErrors,
+		javax.servlet.http.HttpServletRequest"
+		msg="checkNpaDateRequired">
+	</validator>
+
+<!--   *************** End Of Guarantee Maintenance **************** -->
+
+
+<!--  ************* Query Builder ************************** -->
+	<validator name="checkQueryFieldsSelected"
+            classname="com.cgtsi.util.Validator"
+               method="checkQueryFieldsSelected"
+			   methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="QuerySelectionRequired">
+
+      </validator>
+
+<!--  ************* Query Builder ************************** -->
+
+
+	  <!---     ****************Reports************        -->
+
+
+	<validator name="validateApplicationReport"
+            classname="com.cgtsi.util.Validator"
+               method="validateApplicationReport"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateApplicationReport">
+      </validator>
+
+
+	  <validator name="validateCgpanOrSSi"
+            classname="com.cgtsi.util.Validator"
+               method="validateCgpanOrSSi"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateCgpanOrSSi">
+      </validator>
+      
+	  <validator name="validateDefaulterReportFields"
+            classname="com.cgtsi.util.Validator"
+               method="validateDefaulterReportFields"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateDefaulterReportFields">
+      </validator>            
+
+<!-- *******************Inward Outward************* -->
+
+
+	  <validator name="fileInwardValidation"
+            classname="com.cgtsi.util.Validator"
+               method="fileInwardValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="fileInwardValidation">
+      </validator>
+
+	   <validator name="fileOutwardValidation"
+            classname="com.cgtsi.util.Validator"
+               method="fileOutwardValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="fileOutwardValidation">
+      </validator>
+
+	  <validator name="searchDocument"
+            classname="com.cgtsi.util.Validator"
+               method="searchDocument"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="searchDocument">
+      </validator>
+
+	    <validator name="idForCategory"
+            classname="com.cgtsi.util.Validator"
+               method="idForCategory"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="idForCategorys">
+      </validator>
+
+	  <validator name="outwardIdValidation"
+            classname="com.cgtsi.util.Validator"
+               method="outwardIdValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="outwardIdValidation">
+      </validator>
+
+   <validator name="inwardIdValidation"
+            classname="com.cgtsi.util.Validator"
+               method="inwardIdValidation"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="inwardIdValidation">
+      </validator>
+
+   <validator name="validateDefaultRate"
+            classname="com.cgtsi.util.Validator"
+               method="validateDefaultRate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateDefaultRate">
+      </validator>
+
+      <validator name="validateAmounts"
+            classname="com.cgtsi.util.Validator"
+               method="validateAmounts"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateAmounts">
+
+      </validator>
+
+      <validator name="checkTransactionDetails"
+            classname="com.cgtsi.util.Validator"
+               method="checkTransactionDetails"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkTransactionDetails">
+      </validator>
+
+
+	  <!---     ****************High value clearings************        -->
+	 <validator name="differentBanks"
+            classname="com.cgtsi.util.Validator"
+               method="differentBanks"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="differentBanks">
+      </validator>
+
+	 <validator name="validateBuySell"
+            classname="com.cgtsi.util.Validator"
+               method="validateBuySell"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateBuySell">
+      </validator>
+
+	 <validator name="checkExposureEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkExposureEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkExposureEntry">
+      </validator>
+
+	 <validator name="checkStartEndNumber"
+            classname="com.cgtsi.util.Validator"
+               method="checkStartEndNumber"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkStartEndNumber">
+      </validator>
+
+
+	  	 <validator name="validateNumberEntry"
+            classname="com.cgtsi.util.Validator"
+               method="validateNumberEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateNumberEntry">
+      </validator>
+
+
+	  	 <validator name="validateChequeCancelled"
+            classname="com.cgtsi.util.Validator"
+               method="validateChequeCancelled"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateChequeCancelled">
+      </validator>
+	  
+
+	  	 <validator name="validateBankEntry"
+            classname="com.cgtsi.util.Validator"
+               method="validateBankEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateBankEntry">
+      </validator>
+	  
+	  	 <validator name="validateClaimBankEntry"
+            classname="com.cgtsi.util.Validator"
+               method="validateClaimBankEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateClaimBankEntry">
+      </validator>
+
+	  	 <validator name="validateRatingAgency"
+            classname="com.cgtsi.util.Validator"
+               method="validateRatingAgency"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateRatingAgency">
+      </validator>
+
+
+
+
+
+<validator name="validateSanctionedDate1"
+            classname="com.cgtsi.util.Validator"
+               method="validateSanctionedDatesrsf2tc"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToDates">
+
+      </validator>
+      
+       <validator name="validateSanctionedDate2"
+            classname="com.cgtsi.util.Validator"
+               method="validateSanctionedDatesrsf2wcfb"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToDates">
+
+      </validator>
+      
+      
+       <validator name="validateSanctionedDate3"
+            classname="com.cgtsi.util.Validator"
+               method="validateSanctionedDatesrsf2wcnfb"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateFromToDates">
+
+      </validator>
+
+
+
+
+
+	  <!--*************************************************** -->
+
+	 <validator name="checkGFCardRateEntry"
+            classname="com.cgtsi.util.Validator"
+               method="checkGFCardRateEntry"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkGFCardRateEntry">
+      </validator>
+
+	 <validator name="calMaturityDateAmt"
+            classname="com.cgtsi.util.Validator"
+               method="calMaturityDateAmt"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="calMaturityDateAmt">
+      </validator>
+
+      <validator name="validateAfterCurrentDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateAfterCurrentDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateAfterCurrentDates">
+      </validator>
+
+      <validator name="checkMaturityDate"
+            classname="com.cgtsi.util.Validator"
+               method="checkMaturityDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkMaturityDate">
+      </validator>
+
+<!-- added on 24-10-2013 -->
+      <validator name="validateFromNPACurrentDatesNew"
+            classname="com.cgtsi.util.Validator"
+               method="validateFromNPACurrentDatesNew"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="npaCurrent">
+      </validator>
+      
+      <validator name="validateDates"
+            classname="com.cgtsi.util.Validator"
+               method="validateDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="npaGuar">
+      </validator>
+      
+      <validator name="validateRequiredFields"
+            classname="com.cgtsi.util.Validator"
+               method="validateRequiredFields"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="lastInspectionDt">
+      </validator>
+      
+      <validator name="npaRecallDates"
+            classname="com.cgtsi.util.Validator"
+               method="npaRecallDates"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="npaRecallDates">
+      </validator>
+      
+      <validator name="npaLegalDate"
+            classname="com.cgtsi.util.Validator"
+               method="npaLegalDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="npaLegalDate">
+      </validator>
+      
+      <validator name="npaAssetPossessionDate"
+            classname="com.cgtsi.util.Validator"
+               method="npaAssetPossessionDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="npaAssetPossessionDate">
+      </validator>
+      
+      <validator name="validateClaimPageFields"
+            classname="com.cgtsi.util.Validator"
+               method="validateClaimPageFields"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateClaimPageFields">
+      </validator>
+      
+      <validator name="checkSuitAmount"
+            classname="com.cgtsi.util.Validator"
+               method="checkSuitAmount"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkSuitAmount">
+      </validator>
+	<validator name="checkInterestRate"
+            classname="com.cgtsi.util.Validator"
+               method="checkInterestRate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="checkInterestRate">
+
+      </validator>
+
+
+<!-- added vinod 17-Mar-2015 -->
+ 		<validator name="PrimarySecurityCheck"
+            	classname="com.cgtsi.util.Validator"
+               	method="PrimarySecurityCheck"
+         		methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="PrimarySecurityCheck">
+      </validator>
+
+
+  <validator name="validatePanCardNo"
+            classname="com.cgtsi.util.Validator"
+               method="validatePanCardNo"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="firmItpan">
+
+      </validator>
+
+    <validator name="constitutionvalidationforPartner"
+            classname="com.cgtsi.util.Validator"
+               method="constitutionvalidationforPartner"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="constitution">
+
+      </validator>
+      
+
+	
+ <validator name="validateForInternalRating"
+            classname="com.cgtsi.util.Validator"
+               method="validateForInternalRating"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="validateForInternalRating">
+           </validator>
+	<validator name="PmmyMudra"
+            	classname="com.cgtsi.util.Validator"
+               	method="PmmyMudra"
+         		methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="PmmyMudra">
+      </validator>
+
+
+<validator name="checkCreditAmtAndSanctionDate"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDate"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="creditNonFundBased">
+
+      </validator>
+      
+      <validator name="checkCreditAmtAndSanctionDateForTC"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDateForTC"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="creditGuaranteed">
+
+      </validator>
+      
+        <validator name="checkCreditAmtAndSanctionDateForWC"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDateForWC"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="creditGuaranteed">
+
+      </validator>
+      
+      
+        <validator name="checkCreditAmtAndSanctionDateForAdditionalTC"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDateForAdditionalTC"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="creditGuaranteed">
+
+      </validator>
+      
+      <validator name="checkCreditAmtAndSanctionDateForEnhancementWC"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDateForEnhancementWC"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="enhancementDate">
+
+      </validator>
+      
+          <validator name="checkCreditAmtAndSanctionDateForRenewalWC"
+            classname="com.cgtsi.util.Validator"
+               method="checkCreditAmtAndSanctionDateForRenewalWC"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="renewalDate">
+
+      </validator>
+      
+      <validator name="checkInterestRateForWCEnhancement"
+            classname="com.cgtsi.util.Validator"
+               method="checkInterestRateForWCEnhancement"
+         methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionErrors,
+                       javax.servlet.http.HttpServletRequest"
+                  msg="renewalDate">
+
+      </validator>
+      
+   </global>
+
+</form-validation>

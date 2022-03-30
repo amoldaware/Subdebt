@@ -1,0 +1,58 @@
+body{font-family: 'Open Sans', sans-serif !important; margin: 0 auto }
+.custom-navbar a img{width: 150px}
+.custom-navbar{    background-color: white; box-shadow: 1px 4px 15px rgba(62, 62, 62, 0.5);}
+ 
+.custom-mainnav li a{color:#18386b; padding-bottom:10px; position: relative;}
+.custom-mainnav li a:after{
+	content: '';
+    position: absolute;
+    width: 0;
+    border-bottom: 3px solid #f05926;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+.custom-mainnav li a:hover:after{
+	content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #f05926;
+    left: 0;
+    bottom: 0;
+}
+.custom-mainnav li a:hover{	color: #f05926;
+   }
+
+.custom-mainnav li.active a{color:#18386b; padding-bottom:10px; position: relative;}
+.custom-mainnav li.active a:after{
+	content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #f05926;
+    left: 0;
+    bottom: 0;
+}
+
+ .custom-mainnav li a.dropdown-toggle:after{content: '';
+    position: relative;	border-bottom: 0; width: auto;}  
+ .custom-mainnav li a.dropdown-toggle:hover:after{content: '';
+    position: relative;	border-bottom: 0; width: auto;}  
+
+.LogOut{color: white;
+    padding: 0px 5px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #f05926;
+    box-shadow: 2px 2px 5px #f05926;}  
+.LogOut a,.LogOut a:hover{color: white !important;}      
+.custom-mainnav li.LogOut a:hover:after{content: '';
+    position: relative;	border-bottom: 0; width: 0;}  
+
+#main{height: 100vh; padding: 20px 0;}
+
+.welcome{margin: 20px 0 0 0;}
+.welcome h1{text-align: center;  
+    font-size: 22px;
+    padding: 50px 0 0 0;
+    color: #ef5926;
+    font-weight: 600;}

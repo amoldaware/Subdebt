@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<title>CGTSI - Login</title>
+<script language="javascript">
+
+function open_page()
+{
+
+	if(document.loginPage.txtBankId.value=="")
+	 {
+		alert("Bank Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return;
+	 }
+
+	if(document.loginPage.txtZoneId.value=="")
+	 {
+		alert("Zone Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return;
+	 }
+
+	if(document.loginPage.txtBranchId.value=="")
+	 {
+		alert("Branch Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return;
+	 }
+
+	 if(document.loginPage.txtUserId.value=="")
+	 {
+		alert("User Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return;
+	 }
+
+	document.loginPage.action="/servlet/forgotPassword";
+	document.loginPage.target="_top";
+	document.loginPage.submit();
+}
+
+function open_page_login()
+{
+
+	if(document.loginPage.txtBankId.value=="")
+	 {
+		alert("Bank Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return false;
+	 }
+
+	if(document.loginPage.txtZoneId.value=="")
+	 {
+		alert("Zone Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return false;
+	 }
+
+	if(document.loginPage.txtBranchId.value=="")
+	 {
+		alert("Branch Id Should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return false;
+	 }
+	 if(document.loginPage.txtUserId.value=="")
+	 {
+		alert("User Id should not be left Blank");
+ 		document.loginPage.txtUserId.focus();
+ 		return false;
+	 }
+	if(document.loginPage.txtPassword.value=="")
+	 {
+		alert("Password should not be left Blank");
+ 		document.loginPage.txtPassword.focus();
+ 		return false;
+	 }
+	 if(parseInt(document.loginPage.txtBankId.value,10)==0 &&
+		parseInt(document.loginPage.txtZoneId.value,10)==0 && parseInt(document.loginPage.txtBranchId.value,10)==0) {
+		alert("Access denied");
+		document.loginPage.txtBankId.focus();
+		return false;
+	 }
+	document.loginPage.action="/servlet/userLogin";
+	document.loginPage.target="_top";
+	document.loginPage.submit();
+}
+
+function CheckForBlankSpaces1(fieldname)
+     {
+       //this function checks whether there are blank spaces padded in front
+       var str = fieldname.value;
+       var strLength = str.length;
+       var count = 0;
+
+       if(strLength == 0)
+       {
+        str = "0000" + str;
+        fieldname.value = str;
+       }
+
+       else if(strLength == 1)
+       {
+       str = "000" + str;
+ 		fieldname.value = str;
+
+       }
+
+		else if(strLength == 2)
+       {
+        str = "00" + str;
+        fieldname.value = str;
+
+       }
+       else if(strLength == 3)
+       {
+        str = "0" + str;
+        fieldname.value = str;
+
+       }
+       else if(strLength == 4)
+       {
+        str=""+str;
+        fieldname.value = str;
+
+       }
+       //document.loginPage.txtBankId.value = str;
+
+     }
+
+
+function SetDefaultFocus()
+{
+document.loginPage.txtBankId.focus();
+ }
+
+
+
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" bottommargin="0" rightmargin="0" link="#ffcc66"
+ marginwidth="0" marginheight="0" smarginheight="0" width="100%"
+ vlink="#ffcc66" bgcolor="#eaead5" onLoad="SetDefaultFocus()" >
+
+<form method="post" name="loginPage" action="servlet/userLogin">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"><strong><small><font face="Verdana">Click here to view the</font></small>
+      <font face="verdana,helv" size="1"><A style="COLOR: rgb(0,0,255)"
+      target =_parent href="SpecimenAppFrame.htm" ><big>Specimen Application</big></A></strong>.</FONT></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"><font face="verdana,helv" size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </font></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"><font face="verdana,helv" size="-1">
+        <A style="COLOR: rgb(0,0,255)" target  =_parent href="RegisterNowFrame.htm" ><b> </b></A></font></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="32%"><font face="verdana,helv" size="-1">     </font></td>
+      <td width="54%"></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="32%" valign="center"><font face="verdana,helv" size="-1"><nobr><b>Member Id</b></nobr></font></td>
+      <td width="54%" valign="center"><font face="verdana,helv" size="-1"><nobr><b><input
+
+
+      maxLength="4"
+      name="txtBankId" size="4" onBlur="CheckForBlankSpaces1(document.loginPage.txtBankId)"> </b><strong>- </strong><b><input
+
+
+      maxLength="4"
+      name="txtZoneId" size="4" onBlur="CheckForBlankSpaces1(document.loginPage.txtZoneId)">&nbsp; - <input
+
+
+      maxLength="4"
+      name="txtBranchId" size="4" onBlur="CheckForBlankSpaces1(document.loginPage.txtBranchId)">&nbsp; </b>(eg.
+      0016-0001-0012 )</nobr> </font><nobr><font face="Verdana" size="1">Bank Id<em> </em></font><small><small><small><font
+      face="Verdana" size="-1"><b>&nbsp; </b></font><font face="Verdana" size="1">&nbsp;Zone Id</font><b><font
+
+      face="Verdana" size="-1"> </font></b><font face="Verdana" size="1">&nbsp; Branch Id</font></small></small></small></nobr></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="32%"><font face="verdana,helv" size="-1"><nobr><b>User Id</b></nobr></font></td>
+      <td width="54%"><font face="verdana,helv" size="-1"><input maxLength="25" size="25" name="txtUserId"
+      ></font></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="32%"><font face="verdana,helv" size="-1"><b>Password</b></font></td>
+      <td width="54%"><font face="verdana,helv" size="-1"><input maxLength="25" size="25" name="txtPassword" type="password"
+      ></font></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="32%"></td>
+      <td width="54%"><font face="verdana,helv" size="-1"><input type="submit" value=" Login "
+      onclick="return open_page_login();"
+      style="COLOR: rgb(255,204,102); BACKGROUND-COLOR: rgb(0,64,64)">&nbsp;&nbsp;</font><A
+      style="COLOR: rgb(0,0,255)" href="javascript:open_page();" ><font size="-2"
+      face="verdana,helv">forgot password</font></A><font face="verdana,helv" size="-1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </b></font></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"></td>
+    </tr>
+    <tr>
+      <td width="14%"></td>
+      <td width="86%" colspan="2"></td>
+    </tr>
+  </table>
+  <hr align="center" color="#008080" size="1">
+  <div align="center"><center><table border="0" width="775" cellspacing="0" cellpadding="0"
+  height="16">
+    <tr>
+      <td height="9" vAlign="top" width="564" align="middle"><div align="right"><p><font
+      valign="top"><strong><small>&nbsp;&nbsp;&nbsp;<A style="COLOR: rgb(0,0,0)" target =_parent href="siteMapFrame.htm" >Site Map</A>
+      </small><IMG height=20 alt
+      ="glowingarrow.gif (207 bytes)" src="glowingarrow.gif" width=20 ><small> </small></strong></font></p></div></td>
+      <td height="9" vAlign="top" width="83" align="left"><strong><A style="COLOR: rgb(0,0,0)"
+      target =_parent href="contactUsFrame.htm" ><small>Contact Us</small></A><font valign="top"><IMG
+      height=20 alt  ="glowingarrow.gif (207 bytes)" src="glowingarrow.gif" width=20 ></font></strong></td>
+      <td height="9" vAlign="top" width="83" align="middle"><div align="center"><center><p><strong><A
+      style="COLOR: rgb(0,0,0)" target =_parent href="cgfsiHome.htm" ><small>Home</small></A><font valign="top"><IMG
+      height=20 alt  ="glowingarrow.gif (207 bytes)" src="glowingarrow.gif" width=20 ></font></strong></p></center></div></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><table border="0" width="100%" cellspacing="0"
+  cellpadding="0" height="124">
+    <tr>
+      <td width="100%" align="middle" height="124"><font face="Arial" size="1">Best viewed in
+      800 * 600 resolution on IE 4.0 + browsers.<br>
+      Designed and developed by Satyam Computer services Ltd.,<A style="COLOR:
+      rgb(0,0,128)" target =parent href="Developersinfo.htm" >Financial Services Division</A>,Chennai.<br>
+      <A style="COLOR: rgb(0,0,128)" target =main href="disclaimer.htm" >DisClaimer </A><br>
+      Copyright © Credit Guarantee Fund Trust for Small Industries. All rights reserved. </font></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<%@ page language="java"%>
+<%@ page import="com.cgtsi.claim.ClaimConstants"%>
+<%@ page import="com.cgtsi.claim.ClaimDetail"%>
+<%@ page import="com.cgtsi.actionform.ClaimActionForm"%>
+<%@ taglib uri="/WEB-INF/TLD/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/TLD/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/TLD/struts-logic.tld" prefix="logic"%>
+<%@ include file="/jsp/SetMenuInfo.jsp" %>
+<% session.setAttribute("CurrentPage","displayClaimRefNumberDtls.do?method=displayClaimRefNumberDtls");%>
+
+<%
+String bid = null;
+ClaimDetail clmDtl = null;
+%>
+
+<html:errors />
+<body onload ="javascript:calculateAmountPayable()">
+<html:form action="displayClaimApproval.do?method=displayClaimApproval" method="POST" enctype="multipart/form-data">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">    
+    <tr>
+      <td class="FontStyle">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+    <td align="right" valign="bottom"><img src="images/TableLeftTop.gif" height="31"></td>
+      <td background="images/TableBackground1.gif"><img src="images/ClaimsProcessingHeading.gif" width="131" height="25"></td>
+    <td align="right" valign="top" background="images/TableBackground1.gif"> 
+      <div align="right"></div></td>
+    <td align="left" valign="bottom"><img src="images/TableRightTop.gif" height="31"></td>
+  </tr>
+  <tr> 
+    <td background="images/TableVerticalLeftBG.gif">&nbsp;</td>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+		<table width="100%" border="0" cellspacing="1" cellpadding="0">
+                                                                
+                <tr> 
+                  <td colspan="8"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td height="20" class="Heading">&nbsp;<bean:message key="claimdetails"/></td>
+                        <td align="left" valign="bottom"><img src="images/TriangleSubhead.gif" width="19" height="19"></td>
+                      </tr>
+                      <tr> 
+                        <td colspan="4" class="Heading"><img src="images/Clear.gif" width="5" height="5"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+		<%
+		       ClaimActionForm claimForm = (ClaimActionForm)session.getAttribute("cpTcDetailsForm") ;
+		       clmDtl = claimForm.getClaimdetail();
+		       bid = clmDtl.getBorrowerId();
+		       // System.out.println("Borrower Id of the Claim Application :" +bid);
+		       // System.out.println("Claim Ref Number of the Claim Application :" +clmDtl.getClaimRefNum());
+		%>                
+                <tr> 
+		     <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp; <bean:message key="cpmliname"/></div></td> 		
+		     <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.mliName" name="cpTcDetailsForm"/></div></td>
+                </tr>
+                <tr> 
+                  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp; <bean:message key="memberId"/></div></td> 
+
+                  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.mliId" name="cpTcDetailsForm"/></div></td>
+                </tr>
+               
+                <tr> 
+	           <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp; <bean:message key="cpssiunitname"/></div></td> 
+	       
+	           <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.ssiUnitName" name="cpTcDetailsForm"/></div></td>
+                </tr>
+               <tr>
+               	   <td class="ColumnBackground" colspan="1">&nbsp;<bean:message key="whetherrecprocconcluded"/></td>
+	       	   <td class="TableData" colspan="8">Yes</td>
+		</tr>
+                <tr>
+		     <td class="ColumnBackground" colspan="1">&nbsp;<bean:message key="haslegalproceedingsbeeninitiated"/></td>
+		     <td class="TableData" colspan="8">Yes</td>
+		</tr>
+				
+                
+                <tr> 
+                  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="dateofissueofrecallnotice"/></div></td>
+                  <td class="TableData" colspan="8"> <div align="left"><bean:write property="claimdetail.dateOfIssueOfRecallNoticeStr" name="cpTcDetailsForm"/></div></td>
+                </tr>
+		
+		<tr>
+			<td><br></tr>
+		</tr>								
+		
+                <tr> 
+                  <td colspan="4" class="SubHeading">&nbsp;<bean:message key="cgpandetails"/></td>
+                </tr>
+				<tr>
+                  <td colspan="8" class="SubHeading">
+                  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+                      <tr>
+                        <td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="cgpan"/>
+                        </td>
+                        <td class="ColumnBackground" colspan="2"><div align="center">&nbsp;<bean:message key="creditsanctionedbymli"/>
+                        </td>
+                        <td class="ColumnBackground" colspan="2"><div align="center">&nbsp;<bean:message key="cpguaranteeissued"/>
+                        </td>
+                        <td class="ColumnBackground" rowspan="2"><div align="center" > &nbsp;<bean:message key="cpamntdisbursedfortc"/>
+                        </td>
+                        <td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="dtoflastdsbrsmntfortc"/>
+                        </td>
+                        <td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="dtofreleaseofwc"/>
+			</td>
+                        <td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="cpguaranteestartdate"/></div></td>
+                        <td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="cplockinperiodendson"/></div></td>
+			
+			<td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="cpservicefee"/></td>
+			<td class="ColumnBackground" rowspan="2"><div align="center">&nbsp;<bean:message key="cpdtofpaymentofservicefee"/></td>
+			</tr>			
+			<tr class="ColumnBackground">
+			<td div align="center">&nbsp;<bean:message key="cptermcredit"/></div></td>
+			<td div align="center">&nbsp;<bean:message key="cpworkingcapital"/></div></td>			
+			<td div align="center">&nbsp;<bean:message key="cptermcredit"/></div></td>
+			<td div align="center">&nbsp;<bean:message key="cpworkingcapital"/></div></td>			
+			</tr>			
+			<logic:iterate property="claimdetail.cgpanDetails" name="cpTcDetailsForm" id="object">
+			<%
+			java.util.HashMap hashmap = (java.util.HashMap)object;
+			String cgpan = (String)hashmap.get(ClaimConstants.CLM_CGPAN);
+			double tcSanctionedAmnt = ((Double)hashmap.get(ClaimConstants.CLM_TC_SANCTIONED_AMNT)).doubleValue();
+			double wcFBSanctionedAmnt = ((Double)hashmap.get(ClaimConstants.CLM_WC_FB_SANCTIONED_AMNT)).doubleValue();
+			double wcNFBSanctionedAmnt = ((Double)hashmap.get(ClaimConstants.CLM_WC_NFB_SANCTIONED_AMNT)).doubleValue();						
+			double totalWCSanctionedAmnt = wcFBSanctionedAmnt + wcNFBSanctionedAmnt;
+			double tcApprovedAmnt = 0.0;
+			double wcApprovedAmnt = 0.0;
+			java.util.Date lastDisbursementDt = null;
+			String lastDisbursementDtStr = null;
+			double totalDisbursedAmount = 0.0;
+			java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
+			String loanType = (String)hashmap.get(ClaimConstants.CGPAN_LOAN_TYPE);
+			if(loanType.equals(ClaimConstants.CGPAN_TC_LOAN_TYPE))
+			{
+			    tcApprovedAmnt = ((Double)hashmap.get(ClaimConstants.CLM_APPLICATION_APPRVD_AMNT)).doubleValue(); 
+			    totalDisbursedAmount = ((Double)hashmap.get(ClaimConstants.CLM_TOTAL_DISBURSEMENT_AMNT)).doubleValue();
+			    lastDisbursementDt = (java.util.Date)hashmap.get(ClaimConstants.CLM_LAST_DISBURSEMENT_DT);
+			    // lastDisbursementDtStr = lastDisbursementDt.toString();
+			    if(lastDisbursementDt != null)
+			    {
+			    	lastDisbursementDtStr = sdf.format(lastDisbursementDt);
+			    }
+			}
+			else if(loanType.equals(ClaimConstants.CGPAN_WC_LOAN_TYPE))
+			{
+			    wcApprovedAmnt = ((Double)hashmap.get(ClaimConstants.CLM_APPLICATION_APPRVD_AMNT)).doubleValue();
+			    totalDisbursedAmount = 0.0;
+			    lastDisbursementDtStr = "-";
+			}
+			java.util.Date guaranteeStartDt = (java.util.Date)hashmap.get(ClaimConstants.CLM_GUARANTEE_START_DT);
+			String guaranteeStartDtStr = null;
+			if(guaranteeStartDt != null)
+			{
+			    // guaranteeStartDtStr = guaranteeStartDt.toString();
+			    guaranteeStartDtStr = sdf.format(guaranteeStartDt);
+			}
+			else
+			{
+			    guaranteeStartDtStr = "-";
+			}
+			java.util.Date dtOfReleaseOfWC = (java.util.Date)hashmap.get(ClaimConstants.CLM_DT_OF_RELEASE_OF_WC);
+			String dtOfReleaseOfWCStr = null;
+			if(dtOfReleaseOfWC != null)
+			{
+			    // dtOfReleaseOfWCStr = dtOfReleaseOfWC.toString();
+			    dtOfReleaseOfWCStr = sdf.format(dtOfReleaseOfWC);
+			}
+			else
+			{
+			    dtOfReleaseOfWCStr = "-";
+			}
+			Double serviceFee = (Double)hashmap.get(ClaimConstants.CLM_RP_AMOUNT_RAISED);
+			String serviceFeeStr = null;
+			if(serviceFee != null)
+			{
+			    serviceFeeStr = serviceFee.toString();
+			}
+			else
+			{
+			    serviceFeeStr = "";
+			}
+			
+			java.util.Date lastServiceFeeDate = (java.util.Date)hashmap.get(ClaimConstants.CLM_RP_APPROPRIATION_DT);
+			String lastServiceFeeDateStr = null;
+			if(lastServiceFeeDate != null)
+			{
+			    // lastServiceFeeDateStr =  lastServiceFeeDate.toString();
+			    lastServiceFeeDateStr = sdf.format(lastServiceFeeDate);
+			}
+			else
+			{
+			     lastServiceFeeDateStr = "";
+			}
+			java.util.Date lockInPeriodEndDate = (java.util.Date)hashmap.get(ClaimConstants.CLM_LOCK_IN_PERIOD_END_DATE);
+			String lockInPeriodEndDateStr = null;
+			if(lockInPeriodEndDate != null)
+			{
+			   // lockInPeriodEndDateStr =  lockInPeriodEndDate.toString();
+			   lockInPeriodEndDateStr = sdf.format(lockInPeriodEndDate);
+			}
+			else
+			{
+			   lockInPeriodEndDateStr = "-";
+			}
+			%>
+			<tr class="TableData">
+			<td><%=cgpan%></td>
+			<td><div align="center"><%=tcSanctionedAmnt%></div></td>
+			<td><div align="center"><%=totalWCSanctionedAmnt%></div></td>
+			<td><div align="center"><%=tcApprovedAmnt%></div></td>
+			<td><div align="center"><%=wcApprovedAmnt%></div></td>
+			<td><div align="center"><%=totalDisbursedAmount%></div></td>
+
+			<td><div align="center"><%=lastDisbursementDtStr%></div></td>
+			<td><div align="center"><%=dtOfReleaseOfWCStr%></div></td>
+			<td><div align="center"><%=guaranteeStartDtStr%></div></td>
+			<td><div align="center"><%=lockInPeriodEndDateStr%></div></td>			
+			<td><div align="center"><%=serviceFeeStr%></div></td>
+			<td><div align="center"><%=lastServiceFeeDateStr%></div></td>
+			</tr>
+			</logic:iterate>
+			</table></td>
+                </tr>
+                
+                <tr>
+			<td><br></tr>
+		</tr
+                
+                <tr> 
+		   <td colspan="4" class="SubHeading">&nbsp;NPA Details</td>
+                </tr>
+                
+                <tr> 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="dateofnpa"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.npaDateStr" name="cpTcDetailsForm"/></div></td>
+		</tr>
+		<tr> 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="dateofreporting"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.dtOfNPAReportedToCGTSIStr" name="cpTcDetailsForm"/></div></td>
+		</tr>
+		<tr> 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="reasonfornpa"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.reasonForTurningNPA" name="cpTcDetailsForm"/></div></td>
+                </tr>
+                
+		<tr>
+		<td><br></tr>
+		</tr
+                
+                <tr> 
+		  <td colspan="4" class="SubHeading">&nbsp;<bean:message key="cpnpasummry"/></td>
+                </tr>
+                <tr>
+                <td class="SubHeading" colspan="8">
+                <table width="100%" border="0" cellspacing="1" cellpadding="0">
+                <tr>
+                <td class="ColumnBackground" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+                <td class="ColumnBackground" colspan="2" div align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bean:message key="cpoutstandingamount"/></div></td>
+                <td class="ColumnBackground" colspan="2" div align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bean:message key="cpoutstandingamount"/></div></td>                
+                <td class="ColumnBackground" rowspan="2" div align="center">Total</div></td>
+                </tr>
+                <tr>
+                <td class="ColumnBackground" div align="center">&nbsp;<bean:message key="cptcprincipal"/></div></td>
+                <td class="ColumnBackground" div align="center">&nbsp;<bean:message key="cptcintesrtchrges"/></div></td>
+                <td class="ColumnBackground" div align="center">&nbsp;<bean:message key="cpwcincludinginterest"/></div></td>
+                <td class="ColumnBackground" div align="center">&nbsp;<bean:message key="cpothercharges"/></div></td>
+                </tr>
+                <%                
+                String tcInterestChargeForThisBorrower = "tcInterestCharge("+bid+com.cgtsi.claim.ClaimConstants.CLM_AS_ON_NPA+")";
+                %>
+                <tr class="TableData">
+                <td>&nbsp;<bean:message key="cpasonnpa"/></td>
+                <td id="tcOutstandingAmtNPA"><bean:write property="claimdetail.totalTCOSAmountAsOnNPA" name="cpTcDetailsForm" /></td>
+                <td><html:text property="tcInterestChargeForThisBorrower" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+                <td id="wcPrincipalNPA"><bean:write property="claimdetail.totalWCOSAmountAsOnNPA" name="cpTcDetailsForm" /></td>
+                <td><html:text property="wcOtherChargesAsOnNPA" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+                <td id="totalAmntAsOnNPA"><bean:write property="totalAmntAsOnNPA" name="cpTcDetailsForm"/></td>
+                </tr>
+                <%
+                String tcprncplrecafternpa = "tcprincipal("+bid+com.cgtsi.claim.ClaimConstants.CLM_RECOVERIES_AFTER_NPA+")";
+                String tcintrstchrgsrecafternpa = "tcInterestCharge("+bid+com.cgtsi.claim.ClaimConstants.CLM_RECOVERIES_AFTER_NPA+")";
+                %>
+                <tr class="TableData">
+                <td>&nbsp;<bean:message key="cprecoveriesafternpa"/></td>
+		<td><html:text property="tcPrinRecoveriesAfterNPA" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+		<td><html:text property="tcInterestChargesRecovAfterNPA" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16 "onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+		<td><html:text property="wcPrincipalRecoveAfterNPA" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+		<td><html:text property="wcothercgrgsRecAfterNPA" name="cpTcDetailsForm" onblur= "javascript:calculateAmountPayable()" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></td>
+		<td id="totalrecoveriesafternpa"><bean:write property="totalrecoveriesafternpa" name="cpTcDetailsForm"/></td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                
+		<tr>
+		<td><br></tr>
+		</tr
+
+                <tr> 
+		   <td colspan="10" class="SubHeading">&nbsp;<bean:message key="cpclmsummary"/></td>
+                </tr>
+                <%
+                String clmAppliedStr = claimForm.getAmountclaimed();
+                %>
+		<tr > 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="cpamntclaimed"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<%=clmAppliedStr%></div></td>
+		</tr>
+		<tr > 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="clmeligibilityamnt"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<bean:write property="claimdetail.eligibleClaimAmt" name="cpTcDetailsForm" /></div></td>
+		</tr>		
+		<html:hidden property="clmRefDtlSet" name="cpTcDetailsForm" value="<%=ClaimConstants.DISBRSMNT_YES_FLAG%>"/>
+		<tr> 
+		  <td class="ColumnBackground" colspan="1"> <div align="left">&nbsp;<bean:message key="cpamntpayablenow"/></div></td>
+		  <td class="TableData" colspan="8"> <div align="left"> &nbsp;<html:text property="totalAmntPayableNow" name="cpTcDetailsForm" maxlength="16" onkeypress="return decimalOnly(this, event,13)" onkeyup="isValidDecimal(this)"/></div></td>
+		</tr>				
+              </table>
+           </td>
+        </tr>
+      </table></td>
+    <td background="images/TableVerticalRightBG.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+      <td align="right" valign="bottom"><img src="images/TableLeftBottom.gif" width="20" height="51"></td>
+      <td colspan="2" valign="bottom" background="images/TableBackground3.gif"> 
+        <div>
+          <div align="center">          
+          <A href="javascript:submitForm('displayClaimApproval.do?method=displayClaimApproval')"><img src="images/OK.gif" alt="Save" width="49" height="37" border="0"></a>
+          </div>
+      </div></td>
+      <td align="right" valign="bottom"><img src="images/TableRightBottom.gif" width="23" height="51"></td>
+  </tr>
+</table>
+</html:form>
+</body>
+</html>

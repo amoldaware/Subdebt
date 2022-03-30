@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<project name="war-task" defualt="build-war" basedir=".">
+<target name="build-war" depends="compile">
+   <war destfile="warfile/intrabyupchar.war" webxml="Web Content/WEB-INF/web.xml">
+    <fileset dir="Web Content">
+        <include name="*.*" />
+    </fileset>
+    <lib dir="Web Content">
+        <include name="*.jar" />
+    </lib>
+    <classes dir="build/classes" />
+   </war>
+   <echo>Creating war file.</echo>
+</target>
+<target name="compile" depends="init">
+    <javac destdir="build/classes" debug="true" srcdir="src">
+        <classpath refid="compile.classpath"/>
+    </javac>
+    <echo>Compiling classes.</echo>
+</target>
+<target name="compile.classpath">
+    <fileset dir="Web Content/WEB-INF/lib">
+        <include name="*.jar" />
+    </fileset>
+</target>
+<target name="init">
+    <mkdir dir="build/classes"/>
+    <mkdir dir="warfile" />
+    <echo>Making folders.</echo>
+</target>
+<target name="clean">
+    <delete dir="build" />
+    <delete dir="warfile" />
+    <echo>Cleaning directories.</echo>
+</target>
+</project>

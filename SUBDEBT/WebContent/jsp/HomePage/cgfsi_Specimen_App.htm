@@ -1,0 +1,1958 @@
+<!--<body onLoad="enableAssistance(),enableNone(),setConstEnabled(),enableDistrictOthers(),enableOtherLegalId(),enableSubsidyName(),calProjectCost(),calProjectOutlay(),enableGender()">-->
+
+<form name="appForm" method="POST" action="/CGTSI/addCompositeApp.do?method=submitApp">
+	<TABLE width="725" border="0" cellpadding="0" cellspacing="0">
+		<TR> 
+			<TD width="20" align="right" valign="bottom">
+<!--			<IMG src="images/TableLeftTop.gif" width="20" height="31">-->
+			</TD>
+			<TD background="images/TableBackground1.gif">
+<!--			<IMG src="images/ApplicationProcessingHeading.gif" width="91" height="31">-->
+			</TD>
+			<TD width="20" align="left" valign="bottom">
+<!--			<IMG src="images/TableRightTop.gif" width="23" height="31">-->
+			</TD>
+		</TR>
+		<TR>
+			<TD width="20" background="images/TableVerticalLeftBG.gif">&nbsp;</TD>
+			<TD>
+				<DIV align="center">			
+				<b>BOTH TL AND WC APPLICATION
+				</DIV>
+	
+															
+<!--start for app details--><TABLE width="100%" border="0" cellspacing="1" cellpadding="0">
+<tr>
+			<TD  align="left" colspan="4"><font size="2"><bold>
+				All Dates should be in dd/MM/yyyy format
+			</td>
+		</tr>
+
+<tr>
+
+<tr>
+			<TD  align="left" colspan="4"><font size="2"><bold>
+				Fields marked as </font><font color="#FF0000" size="2">*</font><font size="2"> are mandatory</bold></font>
+			</td>
+		</tr>
+								<TR>
+									<TD colspan="4"> 
+										<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+											<TR>
+												<TD width="31%" class="Heading"><b>Application Details</TD>
+												<TD>
+<!--												<IMG src="images/TriangleSubhead.gif" width="19" height="19">-->
+												</TD>
+											</TR>
+											<TR>
+												<TD colspan="4" class="Heading">
+<!--												<IMG src="images/Clear.gif" width="5" height="5">-->
+												</TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground"><font color="#FF0000" size="2">*</font>&nbsp;Bank / Institution Reference No.</td>								
+									<TD align="left" valign="top" class="tableData">....................................
+										
+<!--												<input type="text" name="mliRefNo" maxlength="10" size="25" value="" alt="Bank Reference No">-->
+											
+
+									</TD>
+								 </TR>
+								 <TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground"><font color="#FF0000" size="2">*</font>&nbsp;Bank / Institution Branch Name</td>								
+									<TD align="left" valign="top" class="tableData">....................................
+<!--									<input type="text" name="mliBranchName" maxlength="100" size="20" value="" alt="branch Name">-->
+										
+									</TD>
+								 </TR>
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground">Bank / Institution Branch Code</td>								
+									<TD align="left" valign="top" class="tableData">....................................
+									
+<!--										<input type="text" name="mliBranchCode" maxlength="10" size="20" value="" alt="Branch Code">-->
+										
+									</TD>
+								 </TR>								
+							</TABLE>		<!--closing for app details-->
+							
+
+	<!--table starting --><TABLE width="100%" border="0" cellspacing="1" cellpadding="1">
+								<TR>
+									<TD colspan="7">
+										<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+											<TR>
+												<TD width="31%" class="Heading"><b>Borrower Details</TD>
+												<TD>
+<!--												<IMG src="images/TriangleSubhead.gif" width="19" height="19">-->
+												</TD>
+											</TR>
+											<TR>
+												<TD colspan="6" class="Heading"><IMG src="images/Clear.gif" width="5" height="5"></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="3">
+										Whether borrower already assisted by bank
+									</TD>
+									<TD align="left" class="TableData" colspan="4"> 
+									
+											<input type="radio" name="assistedByBank" value="Y">
+											
+											Yes&nbsp;&nbsp;
+
+											
+												<input type="radio" name="assistedByBank" value="N"  >
+											
+											No
+											
+											
+									</TD>								
+								</TR>
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="3">Outstanding Amount on date of sanction of credit Facility</td>								
+									<TD align="left" valign="top" class="TableData" colspan="4">....................................
+<!--									<input type="text" name="osAmt" maxlength="10" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="Outstanding Amount">-->
+											
+											in Rs.
+									</TD>
+								 </TR>
+								 <TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="3">
+										NPA
+									</TD>
+									<TD align="left" class="TableData" colspan="4"> 
+									
+									
+											<input type="radio" name="npa" value="Y">
+											
+											Yes&nbsp;&nbsp;
+											<input type="radio" name="npa" value="N" >
+												
+											No
+										
+									</TD>								
+								</TR>
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="3">
+										Whether Borrower Covered by CGTSI previously
+									</TD>
+									<TD align="left" class="TableData" colspan="4">
+
+									 
+									
+											<input type="radio" name="previouslyCovered" value="Y" >
+											
+											Yes&nbsp;&nbsp;
+											
+											<input type="radio" name="previouslyCovered" value="N"  >
+											
+											No
+										
+										
+									</TD>								
+								</TR>
+
+								<TR>
+									<TD colspan="9">
+										<TABLE width="100%" border="0" cellpadding="1" cellspacing="1">			
+											 <TR align="left">
+											 
+
+											<TD align="left" valign="top" class="ColumnBackground" width="25%"><input type="radio" name="none" value="none" >None
+												</TD>
+												<TD align="left" valign="top" class="ColumnBackground" ><input type="radio" name="none" value="cgbid">Borrower ID								
+												</TD>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%"><input type="radio" name="none" value="cgpan">CGPAN
+												
+											
+												
+												<TD align="left" valign="top" class="ColumnBackground" width="15%" colspan="2">	
+												
+
+											 
+
+<!--												<input type="text" name="unitValue" maxlength="13" size="15" value="" alt="Value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->....................................
+											
+										
+																							
+<!--												<a href="javascript:submitForm('afterTcMli.do?method=getBorrowerDetails')">View</a>-->
+
+
+											
+												</TD>											
+												
+											</TR>
+
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%"><font color="#FF0000" size="2">*</font>&nbsp;Constitution
+												</TD>
+												<TD align="left" valign="top" class="TableData" colspan="8">
+												
+												
+	<!--												<select name="constitution" onchange="setConstEnabled()"><option value="" selected="selected">Select</option>
+														<option value="proprietary">Proprietary</option>
+														<option value="partnership">Partnership</option>
+														<option value="private">Private Ltd.</option>
+														<option value="public">Public</option>
+														<option value="Others">(Others)</option></select>&nbsp;&nbsp;&nbsp;&nbsp;		
+												
+												
+												 
+									
+													<input type="text" name="constitutionOther" maxlength="50" size="15" value="" disabled="disabled" alt="constitution">-->
+												....................................
+													
+												</TD>
+											 </TR>
+											
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%"><font color="#FF0000" size="2">*</font>&nbsp;Borrower / Unit Name
+												</TD>												
+												<TD align="left" valign="top" class="TableData" width="30%" colspan="4">
+<!--													<select name="ssiType"><option value="" selected="selected">Select</option>
+														<option value="M/s">M/s</option>
+														<option value="Shri">Shri</option>
+														<option value="Smt">Smt</option>
+														<option value="Ku">Ku</option></select>&nbsp;&nbsp;&nbsp;&nbsp;
+													<input type="text" name="ssiName" maxlength="100" size="30" value="" alt="unitName">	-->
+													....................................
+													
+												 </td>
+											</tr>
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+
+											 <TR align="left">											
+												<TD align="left" valign="top" class="ColumnBackground" width="30%"><font color="#FF0000" size="2">*</font>&nbsp;Unit Address
+												</td>
+												<TD align="left" valign="top" class="TableData" width="30%">
+												
+<!--													<textarea name="address" cols="30" rows="3" alt="address"></textarea>	-->
+													
+												</td>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%"><font color="#FF0000" size="2">*</font>&nbsp;State:  
+												</TD>												
+												<TD align="left" valign="top" class="TableData" width="15%" colspan="2">
+																								....................................
+												
+<!--													<select name="state" onchange="javascript:submitForm('afterTcMli.do?method=getDistricts')"><option value="" selected="selected">Select</option>
+														<option value="A & NICOBAR ISLANDS">A &amp; NICOBAR ISLANDS</option>
+<option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+<option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+<option value="ASSAM">ASSAM</option>
+<option value="BIHAR">BIHAR</option>
+<option value="CHANDIGARH">CHANDIGARH</option>
+<option value="CHHATTISGARH">CHHATTISGARH</option>
+<option value="DADRA & NAGAR HAVELI">DADRA &amp; NAGAR HAVELI</option>
+<option value="DAMAN & DIU">DAMAN &amp; DIU</option>
+<option value="DELHI">DELHI</option>
+<option value="GDFSGFDGDF">GDFSGFDGDF</option>
+<option value="GOA">GOA</option>
+<option value="GUJARAT">GUJARAT</option>
+<option value="HARYANA">HARYANA</option>
+<option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+<option value="JAMMU & KASHMIR">JAMMU &amp; KASHMIR</option>
+<option value="JHARKHAND">JHARKHAND</option>
+<option value="KARNATAKA">KARNATAKA</option>
+<option value="KERALA">KERALA</option>
+<option value="LAKSHA DEEP">LAKSHA DEEP</option>
+<option value="MADHYA PRADESH">MADHYA PRADESH</option>
+<option value="MAHARASHTRA">MAHARASHTRA</option>
+<option value="MANIPUR">MANIPUR</option>
+<option value="MEGHALAYA">MEGHALAYA</option>
+<option value="MIZORAM">MIZORAM</option>
+<option value="NAGALAND">NAGALAND</option>
+<option value="NEW STATE">NEW STATE</option>
+<option value="ORISSA">ORISSA</option>
+<option value="PONDICHERRY">PONDICHERRY</option>
+<option value="PUNJAB">PUNJAB</option>
+<option value="RAJASTHAN">RAJASTHAN</option>
+<option value="SDFGDFGSDFGSDFGDFSGSDFGSDFGSDFGSDFGDFSGSDFGSDFGSDF">SDFGDFGSDFGSDFGDFSGSDFGSDFGSDFGSDFGDFSGSDFGSDFGSDF</option>
+<option value="SDFGFSD">SDFGFSD</option>
+<option value="SIKKIM">SIKKIM</option>
+<option value="TAMILNADU">TAMILNADU</option>
+<option value="TEST">TEST</option>
+<option value="TEST">TEST</option>
+<option value="TRIPURA">TRIPURA</option>
+<option value="UTTAR PRADESH">UTTAR PRADESH</option>
+<option value="UTTARANCHAL">UTTARANCHAL</option>
+<option value="WEST BENGAL">WEST BENGAL</option></select>	-->
+												
+													
+												 </td>
+											</tr>
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+											<TR align="left">
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											</td>
+											<TD align="left" valign="top" class="ColumnBackground" width="30%">
+											....................................
+											</td>											
+											</tr>
+
+
+												
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="15%"><font color="#FF0000" size="2">*</font>District:  
+												</TD>												
+												<TD align="left" valign="top" class="TableData" width="15%">....................................
+												
+												
+<!--													<select name="district" ><option value="" selected="selected">Select</option>
+																												<option value="Others">Others</option></select>-->
+												</TD>
+												 
+												<TD align="left" valign="top" class="ColumnBackground" width="25%"><font color="#FF0000" size="2">*</font>City
+												</td>
+												<TD align="left" valign="top" class="TableData" width="15%">....................................
+												
+<!--													<input type="text" name="city" maxlength="100" size="20" value="" alt="city">	-->
+													
+												</td>
+											</tr>
+
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%"><font color="#FF0000" size="2">*</font>&nbsp;PIN code
+												</td>
+												<TD align="left" valign="top" class="TableData" width="70%" colspan="5">....................................
+												
+<!--													<input type="text" name="pincode" maxlength="6" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="pinCode">-->
+													
+												</td>		
+											</TR>
+
+						
+											 <TR align="left">											
+												<TD align="left" valign="top" class="ColumnBackground" width="25%">&nbsp;ITPAN of Firm
+												</td>
+												<TD align="left" valign="top" class="TableData" width="15%" >....................................
+<!--												<input type="text" name="ssiITPan" maxlength="10" size="20" value="" alt="ITPAN">-->
+													
+												</td>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%">&nbsp;SSI Registration Number
+												</td>
+												<TD align="left" valign="top" class="TableData" width="15%" colspan="2">
+												....................................
+<!--														<input type="text" name="regNo" maxlength="25" size="30" value="" alt="SSI Reg No">-->
+													
+												</td>
+
+											</tr>
+
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%">Nature of Industry
+												</TD>												
+												<TD align="left" valign="top" class="TableData">....................................
+
+																							
+<!--													<select name="industryNature" onchange="javascript:submitForm('afterTcMli.do?method=getIndustrySector')"><option value="" selected="selected">Select</option>
+														<option value="MANUFACTURING SSI">MANUFACTURING SSI</option>
+<option value="IT AND SOFTWARE">IT AND SOFTWARE</option>
+<option value="SSSBE">SSSBE</option></select>	-->
+												
+													
+												 </td>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%">Industry Sector:
+												</td>
+												<TD align="left" valign="top" class="TableData" colspan="2">....................................
+																						
+												
+<!--													<select name="industrySector"><option value="" selected="selected">Select</option>
+														
+														<option value="Others">Others</option></select>-->
+													
+												 </td>
+											</tr>
+
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%">&nbsp;<font color="#FF0000" size="2">*</font>Type of Activity
+												</TD>												
+												<TD align="left" valign="top" class="TableData">....................................
+												
+<!--													<input type="text" name="activityType" maxlength="50" size="20" value="" alt="Activity Type">-->
+													
+												 </td>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%">&nbsp;Number of Employees
+												</td>
+												<TD align="left" valign="top" class="TableData" width="15%" colspan="2">....................................
+<!--												<input type="text" name="employeeNos" size="10" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="No Of employees">	-->
+													
+												</td>
+											</tr>
+
+											 <TR align="left">
+												<TD align="left" valign="top" class="ColumnBackground" width="30%">Projected Optimum Sales Turnover
+												</TD>												
+												<TD align="left" valign="top" class="TableData">
+												...........................
+<!--													<input type="text" name="projectedSalesTurnover" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="turnover">-->
+													
+													in Rs.
+												 </td>
+												<TD align="left" valign="top" class="ColumnBackground" width="25%">Projected Optimum Exports
+												</td>
+												<TD align="left" valign="top" class="TableData" width="15%" colspan="2">
+												....................................
+<!--													<input type="text" name="projectedExports" maxlength="13" size="10" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="exports">-->
+													
+													in Rs.
+												</td>
+											</tr>
+
+										</TABLE>
+									</TD>
+								</TR>		
+								<tr>
+									<td>
+									</td>
+								</tr>
+								<TR>
+									<TD class="SubHeading" colspan="6"><b>Promoter Details
+									</TD>						
+								</TR>
+
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="6">
+										<b>Chief Promoter's Information
+									</TD>
+								</TR>
+
+							  <TR align="left">
+								  <TD align="left" valign="top" class="ColumnBackground" colspan="2" width="15%">
+								  </TD>												 
+								  <TD align="left" valign="top" class="ColumnBackground" width="10%">
+										<font color="#FF0000" size="2">*</font>&nbsp;<b>Title
+								   </TD>
+								   <TD align="left" valign="top" class="ColumnBackground" width="25%">
+										<font color="#FF0000" size="2">*</font>&nbsp;<b>First Name
+								   </TD>
+									<TD align="left" valign="top" class="ColumnBackground" width="25%">
+										<b>Middle Name	
+								   </TD>
+									<TD align="left" valign="top" class="ColumnBackground" width="25%">
+										<font color="#FF0000" size="2">*</font>&nbsp;<b>Last Name (Surname)
+								   </TD>
+								</TR>
+
+								<TR align="left">
+								  <TD align="left" valign="top" class="ColumnBackground" colspan="2" width="15%">Name
+								  </TD>		
+								  <TD align="left" valign="top" class="TableData">
+								  ...................
+								  
+								 
+<!--									<select name="cpTitle" ><option value="" selected="selected">Select</option>
+										<option value="Mr.">Mr</option>
+										<option value="Smt">Smt</option>
+										<option value="Ku">Ku</option></select>-->
+									
+									
+								  </TD>
+								  <TD align="left" valign="top" class="TableData">
+
+								  ....................................
+								  
+<!--									<input type="text" name="cpFirstName" maxlength="20" size="20" value="" alt="firstName">-->
+									
+									
+								  </TD>
+								   <TD align="left" valign="top" class="TableData">
+								   ....................................
+								   								  
+								   
+<!--									<input type="text" name="cpMiddleName" maxlength="20" size="20" value="" alt="middleName">-->
+
+									
+									
+								  </TD>
+								   <TD align="left" valign="top" class="TableData">
+
+								   	....................................
+								  
+<!--									<input type="text" name="cpLastName" maxlength="20" size="20" value="" alt="lastName">-->
+
+																		
+								  </TD>
+								</TR>
+
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="2"><font color="#FF0000" size="2">*</font>&nbsp;Gender
+									</TD>
+									<TD align="left" valign="top" class="TableData" width="20%">
+
+									
+									<input type="radio" name="cpGender" value="M" >
+									
+										Male&nbsp;&nbsp;&nbsp;
+
+									
+										<input type="radio" name="cpGender" value="F">
+									
+										Female
+									
+									
+									</TD>
+									<TD align="left" valign="top" class="ColumnBackground">
+										&nbsp;ITPAN of Chief Promoter
+									</TD>
+									<TD align="left" valign="top" class="TableData" colspan="2" width="20%">
+
+										....................................
+									
+<!--										<input type="text" name="cpITPAN" maxlength="10" size="15" value="" alt="chiefItpan">-->
+
+									
+									
+									</TD>													
+								</TR>
+
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="2">
+										Date of Birth 					
+									</TD>
+									<TD align="left" valign="top" class="TableData" >
+									...............................
+									
+<!--										<input type="text" name="cpDOB" maxlength="10" size="15" value="" alt="dob">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.cpDOB')" align="center">-->
+									
+									
+
+									<TD align="left" valign="top" class="ColumnBackground">
+									Social Category
+									</TD>
+									<TD align="left" valign="top" class="TableData" width="20%" colspan="3">
+
+										....................................
+									
+<!--										<select name="socialCategory"><option value="" selected="selected">Select</option>
+											<option value="SC">SC</option>
+<option value="BC">BC</option>
+<option value="Scheduled Caste">Scheduled Caste</option></select>-->
+
+																		
+										
+									</TD>
+
+										
+									</TD>
+								</TR>
+
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="2">
+										&nbsp;Legal ID					
+									</TD>
+									<TD align="left" valign="top" class="TableData" colspan="5">								
+																	
+<!--										<select name="cpLegalID" ><option value="" selected="selected">Select</option>
+											<option value="VoterIdentityCard">Voter Identity Card</option>
+											<option value="PASSPORT">Passport Number</option>
+											<option value="Driving License">Driving License</option>
+											<option value="RationCardnumber">Ration Card Number</option>
+											<option value="Others">Others</option></select>			
+									
+
+																										
+										<input type="text" name="otherCpLegalID" maxlength="50" size="20" value="" disabled="disabled" alt="otherId">&nbsp;&nbsp;(Other ID)	
+									
+
+										&nbsp;&nbsp;&nbsp;&nbsp;<strong>Please Specify</strong>
+
+																
+									
+										<input type="text" name="cpLegalIdValue" maxlength="20" size="20" value="" alt="value">&nbsp;&nbsp;ID-->
+									Name ........................... Value ...........................
+									
+									
+									</TD>
+								</TR>
+
+								<TR align="left">
+									<TD align="left" valign="top" class="ColumnBackground" colspan="7"><b>Other Partners / Promoter Directors	
+									</TD>
+								</TR>
+								 <tr> 
+									 <td class="ColumnBackground"colspan="7">
+										 <table border="1" cellpadding="1" cellspacing="0" width="100%">
+											<tr>
+												<td class="ColumnBackground" width="17%">
+													1. Name
+												</td>
+												<td width="15%" class="TableData">
+												
+													<span style="font-size: 9pt" >	
+
+					....................................															
+									
+<!--													<input type="text" name="firstName" maxlength="50" size="20" value="" alt="firstName">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													ITPAN
+												</td>
+												<td width="17%" class="TableData">												
+													<span style="font-size: 9pt"> 
+
+					....................................										
+<!--													<input type="text" name="firstItpan" maxlength="10" size="20" value="" alt="firstItpan">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Date of Birth
+												</td>
+												<td width="17%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+													....................................
+													
+																									
+<!--													 <input type="text" name="firstDOB" maxlength="10" size="10" value="" alt="firstDOB">
+													<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.firstDOB')" align="center">-->
+													
+													</span>
+													
+												</td>
+											</tr>
+											 <tr>
+												<td class="ColumnBackground" width="17%">
+													2. Name	
+												</td>
+												<td width="15%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+
+					....................................										
+<!--													<input type="text" name="secondName" maxlength="50" size="20" value="" alt="secondName">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													ITPAN
+												</td>
+												<td width="17%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+													....................................
+															
+<!--													<input type="text" name="secondItpan" maxlength="10" size="20" value="" alt="secondItpan">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Date of Birth
+												</td>
+												<td width="17%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+													....................................
+														
+<!--													 <input type="text" name="secondDOB" maxlength="10" size="10" value="" alt="secondDOB">
+												<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.secondDOB')" align="center">-->
+													
+													</span>
+													
+												</td>
+											</tr>
+
+											 <tr>
+												<td class="ColumnBackground" width="17%">
+													3. Name	
+												</td>
+												<td width="15%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+													....................................
+														
+<!--													<input type="text" name="thirdName" maxlength="50" size="20" value="" alt="thirdName">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													ITPAN
+												</td>
+												<td width="17%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+					....................................									
+<!--													<input type="text" name="thirdItpan" maxlength="10" size="20" value="" alt="thirdItpan">-->
+													
+													</span>
+													
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Date of Birth
+												</td>
+												<td width="17%" class="TableData">
+												
+													<span style="font-size: 9pt"> 
+													....................................
+														
+<!--													 <input type="text" name="thirdDOB" maxlength="10" size="10" value="" alt="thirdDOB">
+													<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.thirdDOB')" align="center">-->
+													
+													</span>
+													
+												</td>
+											</tr>
+										 </table>
+									</td>
+								 </tr>
+								<tr align="left"> 
+									<td colspan="6">
+										<img src="../images/clear.gif" width="5" height="15">
+									</td>
+								</tr>
+							</TABLE>			<!--table closing for borrower details-->
+
+
+<!--start for project-->	<table width="100%" cellspacing="1" cellpadding="0">
+								<tr> 
+									<td colspan="8">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											 <tr> 
+												<TD width="31%" class="Heading"><b>Project Details- Outlay</TD>
+												<TD>
+<!--												<IMG src="images/TriangleSubhead.gif" width="19" height="19">-->
+												 </TD>
+												 <td>&nbsp;</td>
+												 <td>&nbsp;</td>
+											 </tr>											
+											 <TR>
+												<TD colspan="4" class="Heading">
+<!--												<IMG src="images/Clear.gif" width="5" height="5">-->
+												</TD>
+											</TR>                   
+										</table>
+									</td>
+								</tr>
+								<tr align="left"> 
+									 <td class="ColumnBackground">
+										<font color="#FF0000" size="2">*</font>&nbsp;Collateral Security Taken
+									 </td>
+									 <td align="left" valign="middle" class="TableData"> <div align="left">
+									 	
+									
+										<input type="radio" name="collateralSecurityTaken" value="Y">
+										
+										Y
+
+										
+										<input type="radio" name="collateralSecurityTaken" value="N" >
+										
+										N
+									
+										
+									</td>
+									<td class="ColumnBackground"> &nbsp
+										<font color="#FF0000" size="1">#</font>&nbsp;Third Party Guarantee 
+									</td>
+									<td align="left" valign="middle" class="TableData">	
+
+									 	
+										
+										 <input type="radio" name="thirdPartyGuaranteeTaken" value="Y">Y						 
+										
+										<input type="radio" name="thirdPartyGuaranteeTaken" value="N" >N
+									
+									
+									</td>
+								</tr>
+								<tr align="left">
+									<td class="ColumnBackground" colspan="4">									
+										<font color="#FF0000" size="2">*&nbsp;</font> <font color="#FF0000" size="1">Collateral security is any other security offered for the said loan. For example, hypothecation of jewellery, mortgage of house, etc.</font><br>
+										<font color="#FF0000" size="1">#&nbsp;</font><font color="#FF0000" size="1">When the borrower furnishes the guarantee of any other person / corporate not connected with the project, it is considered as Third Party Guarantee.</font>
+									</td>
+								</tr>
+
+								<tr align="left"> 
+									<td colspan="4" align="left" class="ColumnBackground"><b>Guarantors</td>
+								</tr>
+
+								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="0" cellspacing="0" width="100%">
+<!--								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="1" cellspacing="0" width="100%">-->
+											<tr>
+												<TD align="left" valign="top" class="ColumnBackground" width="17%">
+													1. Name
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsName1" maxlength="100" size="20" value="" alt="guarantorsName1">-->							
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Net Worth(as on date of sanction of facility)
+												</td>
+												<td width="17%" class="TableData">
+												 ....................................
+<!--													<input type="text" name="guarantorsNetWorth1" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="guarantorsNetWorth1">-->
+												
+												</td>
+											</tr>
+										<!--</table>
+									</td>
+								</tr>
+								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="1" cellspacing="0" width="100%">-->
+											<tr>
+												<TD align="left" valign="top" class="ColumnBackground" width="17%">
+													2. Name
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsName2" maxlength="100" size="20" value="" alt="guarantorsName2">-->							
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Net Worth(as on date of sanction of facility)
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsNetWorth2" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="guarantorsNetWorth2">-->
+												</td>
+											</tr>
+										<!--</table>
+									</td>
+								</tr>
+								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="1" cellspacing="0" width="100%">-->
+											<tr>
+												<TD align="left" valign="top" class="ColumnBackground" width="17%">
+													3. Name
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsName3" maxlength="100" size="20" value="" alt="guarantorsName3">-->							
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Net Worth(as on date of sanction of facility)
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsNetWorth3" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="guarantorsNetWorth4">-->
+												</td>
+											</tr>
+										<!--</table>
+									</td>
+								</tr>
+								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="1" cellspacing="0" width="100%">-->
+											<tr>
+												<TD align="left" valign="top" class="ColumnBackground" width="17%">
+													4. Name
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsName4" maxlength="100" size="20" value="" alt="guarantorsName4">-->							
+												</td>
+												<td width="17%" class="ColumnBackground" >
+													Net Worth(as on date of sanction of facility)
+												</td>
+												<td width="17%" class="TableData">....................................
+<!--													<input type="text" name="guarantorsNetWorth4" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="guarantorsNetWorth4">-->
+												</td>
+											</tr>
+										<!--</table>
+									</td>
+								</tr>-->
+								</table></td></tr>
+								<tr> 
+									<TD align="left" valign="top" class="ColumnBackground">
+										Name of Subsidy / Equity Support Scheme
+									</td>
+									<TD align="left" valign="top" class="TableData" colspan="3">
+<!--										<select name="subsidyName" ><option value="" selected="selected">Select</option>
+											<option value="PMRY">PMRY</option>
+											<option value="SJRY">SJRY</option>
+											<option value="Others">Others</option></select>
+									
+
+																			
+										<input type="text" name="otherSubsidyEquityName" maxlength="50" size="20" value="" alt="subsidyName">-->
+									....................................
+									</td>
+								</tr>
+								<tr align="left"> 
+									<TD class="SubHeading">
+										<b>Primary Security Details
+									</TD>
+								</tr>
+								<tr align="left"> 
+									<TD align="left" valign="top" class="ColumnBackground" colspan="4">
+										<table border="1" cellpadding="1" cellspacing="0" width="100%">
+								<tr align="left">
+									<TD align="center" valign="top" class="ColumnBackground" >
+										<div align="center">
+										<b>Security Name</div>
+									</td>
+									<TD align="center" valign="top" colspan="2" class="ColumnBackground" ><div align="center">
+										<b>Particulars</div>
+									</td>
+									<TD align="center" valign="top" class="ColumnBackground" > 
+										<div align="center">
+										<b>Value(in Rs.)<div>
+									</td>
+								</tr>	
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">
+										Land</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2"> 
+										<div align="center">....................................
+<!--										<input type="text" name="landParticulars" maxlength="4000" size="20" value="" alt="landPart">-->
+										</div>
+										
+									</td>
+									<TD align="center" valign="top" class="TableData">
+										<div align="center">....................................
+<!--										<input type="text" name="landValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="landValue">-->
+										</div>
+										
+									</td>
+								</tr>
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">
+										Building</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2"> 
+										<div align="center">....................................
+<!--										<input type="text" name="bldgParticulars" maxlength="4000" size="20" value="" alt="bldgPart">-->
+										</div>
+										
+									</td>
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">....................................
+<!--										<input type="text" name="bldgValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="bldgValue">-->
+										</div>
+										
+									</td>
+								</tr>
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">
+										Plant and Machinery</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2">
+										<div align="center">....................................
+<!--										<input type="text" name="machineParticulars" maxlength="400" size="20" value="" alt="machinePart">-->
+										</div>
+									</td>
+									<TD align="center" valign="top" class="TableData">
+										<div align="center">....................................
+<!--										<input type="text" name="machineValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="machineValue">-->
+										</div>
+										
+									</td>
+								</tr>
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">
+										Other Fixed / Movable Assets</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2"> 
+										<div align="center">....................................
+<!--										<input type="text" name="assetsParticulars" maxlength="400" size="20" value="" alt="assetsPart">-->
+										</div>
+
+									</td>
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">....................................
+<!--										<input type="text" name="assetsValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="assetsValue">-->
+										</div>
+										
+									</td>
+								</tr>
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">
+										Current Assets</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2">
+										<div align="center">....................................
+<!--										<input type="text" name="currentAssetsParticulars" maxlength="400" size="20" value="" alt="currentAssetsPart">-->
+										</div>
+										
+									</td>
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">....................................
+<!--										<input type="text" name="currentAssetsValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="currentAssetsValue">-->
+										</div>
+										
+									</td>
+								</tr>
+								<tr align="left">
+									<TD align="center" valign="top" class="TableData" >
+									<div align="center">
+										Others</div>
+									</td>
+									<TD align="center" valign="top" class="TableData" colspan="2"> 
+										<div align="center">....................................
+<!--										<input type="text" name="othersParticulars" maxlength="400" size="20" value="" alt="othersPart">-->
+										</div>
+									
+									</td>
+									<TD align="center" valign="top" class="TableData" >
+										<div align="center">....................................
+<!--										<input type="text" name="othersValue" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="othersValue">-->
+										</div>
+										
+									</td>
+								</tr>	
+								<tr align="left">
+									<TD align="right" valign="center" class="TableData" colspan="3"><div align="center">
+										Total</div>
+									</td>									
+									<TD align="center" valign="top" class="TableData" id="psTotalWorth">
+									
+
+									in Rs.
+														
+									</td>
+									
+								</tr>
+								</table></td></tr>
+								
+								<tr align="left"> 
+									<td colspan="8" class="SubHeading" height="28" width="843"><br> &nbsp;
+										<b>Means Of Finance
+									</td>
+								</tr>
+								<tr valign="top"> 
+									<td colspan="4">
+										<table width="100%" border="0" align="right" cellpadding="0" cellspacing="1">
+											<tr> 
+												<td class="ColumnBackground" width="25%" align="left" valign="top" >
+												
+												Term Credit Sanctioned
+												
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="tcSanctioned">
+												..........................
+<!--													<input type="text" name="termCreditSanctioned" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="tcSanctioned">-->
+													in Rs.
+												</td>
+												<td class="ColumnBackground" colspan="2" align="left" valign="top" >
+													<table width="100%" border="0" align="right" cellpadding="0" cellspacing="1">
+														<tr align="left">
+															<td class="ColumnBackground" colspan="2" align="center">
+															
+															<font color="#FF0000" size="2">*</font>
+																Working Capital Limit Sanctioned
+															
+															</td>
+														</tr>							
+														<tr align="left">
+															<td class="ColumnBackground" align="left" valign="top" >
+																Fund Based
+															</td>
+															<td class="TableData" align="left" valign="top" id="wcFBsanctioned">
+															..........................
+<!--															<input type="text" name="wcFundBasedSanctioned" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="wcFundBased">-->
+																in Rs.
+															</td>						
+														</tr>
+														<tr align="left">
+															<td class="ColumnBackground" align="left" valign="top" >
+																Non Fund Based
+															</td>
+															<td class="TableData" align="left" valign="top" >
+															.......................
+														<!--		<input type="text" name="wcNonFundBasedSanctioned" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" onblur="javascript:calProjectOutlay()" alt="wcNonFundBased">-->
+															
+																in Rs.
+															</td>						
+														</tr>-->	
+														<tr align="left">
+															<td class="ColumnBackground" align="left" valign="top" width="50%">
+																Whether provided as margin money under Term Loan
+															</td>
+															<td class="TableData" align="left" valign="top" >
+															
+																<input type="radio" name="marginMoneyAsTL" value="Y" >
+											
+																Yes&nbsp;&nbsp;
+																
+																<input type="radio" name="marginMoneyAsTL" value="N"  >
+																
+																No
+															
+															
+															</td>
+														</tr>
+														
+													</table>
+												</td>						 
+											</tr>
+											<tr align="left"> 
+												<td class="ColumnBackground" width="25%">
+													Promoters Contribution
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="tcCont">..........................
+<!--													<input type="text" name="tcPromoterContribution" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="promotersCont">-->
+												  in Rs.
+												</td>
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Promoters Contribution
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="wcCont">..........................
+<!--													<input type="text" name="wcPromoterContribution" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="wcPromoterContribution">-->
+												  in Rs.
+												</td>
+											</tr>
+											<tr align="left"> 
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Subsidy / Equity Support
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="tcSubsidy">..........................
+<!--													<input type="text" name="tcSubsidyOrEquity" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="tcSubsidyOrEquity">-->
+												  in Rs.
+												</td>
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Subsidy / Equity Support
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="wcSubsidy">
+												..........................													
+<!--													<input type="text" name="wcSubsidyOrEquity" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="wcSubsidyOrEquity">-->
+												  in Rs.
+												</td>
+											</tr>
+											<tr align="left"> 
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Others
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="tcOther">
+												..........................
+<!--													<input type="text" name="tcOthers" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="tcOthers">-->
+												  in Rs.
+												</td>
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Others
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="wcOther">
+												..........................
+<!--													<input type="text" name="wcOthers" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)"  alt="wcOthers">-->
+												  in Rs.
+												</td>
+											</tr>												
+											<TR align="left">
+												<td class="ColumnBackground" width="25%">&nbsp; 
+													Project Cost
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="projectCost">
+												..........................
+													in Rs.
+													
+												</td>
+												<td class="ColumnBackground" width="25%">&nbsp;
+													Working Capital Assessed
+												</td>
+												<td class="TableData" width="20%" align="left" valign="top" id="wcAssessed">
+												
+												..........................
+													in Rs.
+													
+												</td>
+											</tr>
+											<tr align="left"> 
+												<td class="ColumnBackground" colspan="2" style="text-align: center" >
+													Project Outlay
+												</td>
+												<td class="ColumnBackground" colspan="1" id="projectOutlay">	
+												..........................
+												</td>
+												<td class="ColumnBackground" colspan="1">
+												in Rs.
+												<input type="hidden" name="projectOutlay" value="">
+												</td>
+											</tr>
+											<input type="hidden" name="status" value="">											
+				
+															
+										</table>					
+									</TD>
+								</TR>
+
+									
+
+
+							</table>
+							
+
+
+
+
+
+
+
+
+
+
+
+				
+
+<!--start of term-->		<table width="100%" border="0" cellspacing="1" cellpadding="0">
+								<TR>
+									<TD colspan="10">
+										<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+											<TR>
+												<TD width="31%" class="Heading"><b>FacilityDetails</TD>
+												<TD>
+<!--												<IMG src="images/TriangleSubhead.gif" width="19" height="19">-->
+												</TD>
+											</TR>
+											<TR>
+												<TD colspan="9" class="Heading">
+<!--												<IMG src="images/Clear.gif" width="5" height="5">-->
+												</TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								
+								<tr>
+									<td class="ColumnBackground">&nbsp;Scheme
+									</td>
+									<td class="TableData" colspan="10">&nbsp;
+									
+									..........................
+									
+									</td>               
+								</tr>
+								<tr>
+									<td class="ColumnBackground" id="loanType">&nbsp;Loan Type
+									</td>
+									<td class="TableData" colspan="10">&nbsp;BO
+									<input type="hidden" name="loanType" value="TC">
+									</td> 
+								</tr>
+								<tr>
+									<td class="ColumnBackground">&nbsp;Composite Loan
+									</td>
+									<td class="TableData" colspan="10">&nbsp;N
+									</td> 
+								</tr>
+								
+								<tr align="left"> 
+									<td colspan="10" class="SubHeading" height="28" width="843"><br> &nbsp;
+										<b>Term Credit Details
+									</td>
+								</tr>
+								
+								<tr align="left"> 
+									<td class="ColumnBackground" height="28">&nbsp;
+										Amount Sanctioned
+									</td>
+									<td width="25%" class="TableData" height="28" id="amountSanctioned">
+										
+											in Rs.
+											
+												
+									</td>
+									<td width="15%" class="ColumnBackground" height="28">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Date of Sanction
+									</td>
+									<td width="20%" class="TableData" height="28" colspan="8">
+									..........................
+<!--											<input type="text" name="amountSanctionedDate" maxlength="10" size="20" value="" alt="amountSanctionedDate">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.amountSanctionedDate')" align="center">-->
+										
+											
+									</td>
+								 </tr>
+								 <tr align="left">
+									<td width="25%" class="ColumnBackground">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Credit to be Guaranteed						
+									</td>
+									<td colspan="10" class="TableData">
+									..........................
+									
+<!--											<input type="text" name="creditGuaranteed" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="creditGuaranteed">-->
+										
+										
+									</td>
+								</tr>
+								<tr> 
+									<td class="ColumnBackground" height="28" width="25%">&nbsp;
+										Amount Disbursed		
+									</td>
+									<td class="TableData" height="28" width="25%">
+									..........................
+<!--										<input type="text" name="amtDisbursed" maxlength="13" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="amtDisbursed">-->
+										
+										in Rs.	
+									</td>
+									<td class="ColumnBackground" height="28" colspan="9">
+										<table border="0" cellpadding="0" cellspacing="0"  width="100%">
+											<tr align="left">
+												<td class="ColumnBackground" height="28" width="269">&nbsp;
+													Date of first disbursement if already made	
+												</td>
+												<td class="TableData" height="28" width="160" colspan="5">
+												..........................
+<!--													<input type="text" name="firstDisbursementDate" maxlength="10" size="10" value="" alt="firstDisbursementDate">
+													<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.firstDisbursementDate')" align="center">-->
+												
+												</td>
+											</tr>
+											<tr align="left">
+												<td class="ColumnBackground" height="28" width="269" >&nbsp;
+												
+												Date of last and final disbursement if already made
+												
+												</td>
+												<td class="TableData" height="28" width="160">
+												..........................
+<!--													<input type="text" name="finalDisbursementDate" maxlength="10" size="10" value="" alt="finalDisbursementDate">
+													<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.finalDisbursementDate')" align="center">-->
+												
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr align="left"> 
+									<td class="ColumnBackground" height="28" >&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Tenure (months)&nbsp;
+									</td>
+									<td class="TableData" height="28" colspan="10">	
+									..........................
+									
+<!--										<input type="text" name="tenure" maxlength="3" size="20" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="tenure">-->
+									
+									
+									</td>
+								</tr>
+								<tr align="left"> 
+									<td class="ColumnBackground" height="28">&nbsp;
+										Interest Type
+									</td>
+									<td class="TableData" >
+
+
+									<input type="radio" name="interestType" value="T" >
+									
+										Fixed&nbsp;
+									
+										<input type="radio" name="interestType" value="F">	
+									
+										Floating
+									
+									
+										&nbsp;<!--<input type="text" name="interestRate" maxlength="4" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="interestRate">
+										in %-->
+									</td>
+									<!--<td class="ColumnBackground" height="28" >&nbsp;
+										Benchmark PLR
+									</td>
+									<td class="TableData" height="28" width="160">&nbsp;
+										
+										<input type="text" name="benchMarkPLR" maxlength="3" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="benchMarkPLR">&nbsp;
+										
+										in %
+									</td>
+									<td class="ColumnBackground" height="28" >&nbsp;
+										Benchmark PLR
+									</td>-->
+									<td class="ColumnBackground" height="28" >&nbsp;
+									<font color="#FF0000" size="2">*</font>&nbsp;Type of PLR
+									</td>
+									<td class="TableData" height="28" colspan="8">&nbsp;
+									..........................
+										
+<!--										<input type="text" name="typeOfPLR" maxlength="50" size="20" value="" alt="typeOfPLR">&nbsp;	-->					
+									
+									</td>
+								</tr>
+								<tr align="left">
+									
+									<td width="25%" class="ColumnBackground"> <div align="left">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Prime Lending Rate (corresponding to the tenure of loan limit)</div>
+									</td>
+									<td class="TableData" >
+										<div align="left"> 
+										..........................
+<!--											<input type="text" name="plr" maxlength="5" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="plr">&nbsp;-->
+										
+											in % (p.a.)
+										
+										</div>
+									</td>
+									<td width="25%" class="ColumnBackground"> <div align="left">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Interest Rate</div>
+									</td>
+									<td class="TableData" colspan="8">
+										<div align="left"> 
+										.................
+										
+<!--											<input type="text" name="interestRate" maxlength="5" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="interestRate">&nbsp;-->
+										
+											in % (p.a.)
+										
+										</div>
+									</td>
+
+								</tr>
+								<tr align="left"> 
+									<td class="ColumnBackground" colspan="12" height="24" width="843">
+										<b>Repayment Schedule
+									</td>
+								</tr>
+								<tr align="left"> 
+									<td class="ColumnBackground" colspan="12" height="24" width="843">
+										<table border="0" cellpadding="0" cellspacing="0"  width="100%" height="71">
+											<tr>
+												<td width="7%" height="18">
+												</td>
+												<td width="29%" height="18">
+													Moratorium
+												</td>
+												<td width="64%" height="18" colspan="3">
+												
+<!--													<span style="font-size: 9pt; font-weight: 700">
+													
+													<input type="text" name="repaymentMoratorium" maxlength="3" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="repaymentMoratorium">
+													</span>
+													<span style="font-size: 9pt"> -->
+												..........................
+													[in Months]
+													
+												</td>
+											</tr>
+											<tr>
+												<td width="7%" height="17">
+												</td>
+												<td width="29%" height="17">
+													
+														&nbsp;First Instalment Due Date
+													
+												</td>
+												<td width="64%" height="17">
+												
+<!--													<span style="font-size: 9pt; font-weight: 700">
+													
+														<input type="text" name="firstInstallmentDueDate" maxlength="10" size="20" value="" alt="firstInstallmentDueDate">
+													<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.firstInstallmentDueDate')" align="center">
+														
+														</span>-->
+													..........................
+												</td>
+											</tr>
+											<tr>
+												<td width="7%" height="18"></td>
+												<td width="29%" height="18">
+													
+														Periodicity
+													
+												</td>
+												<td width="64%" height="18">
+												
+<!--													<span style="font-size: 9pt; font-weight: 700">
+													
+													<select name="periodicity"><option value="" selected="selected">Select</option>
+														<option value="1">Monthly</option>
+														<option value="2">Quaterly</option>
+														<option value="3">Half-Yearly</option></select>
+													
+													</span>-->
+												..........................
+												 </td>
+											</tr>
+											<tr>
+												<td width="7%" height="18">
+												</td>
+												<td width="29%" height="18">
+													<font color="#FF0000" size="2">*</font>&nbsp;
+													No of Instalments
+													
+												</td>
+												<td width="64%" height="18">
+											
+<!--													<span style="font-size: 9pt; font-weight: 700">
+													
+													<input type="text" name="noOfInstallments" maxlength="3" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="noOfInstallments">
+													
+													</span>-->
+												..........................
+												</td>
+											</tr>
+										 </table>
+									</td>
+								</tr>
+								<tr> 
+									<td class="ColumnBackground" height="28" width="252">&nbsp;
+										Outstanding Amount
+									</td>
+									<td colspan="10" class="TableData" height="28" width="590">
+									..........................
+									
+<!--										<input type="text" name="pplOS" maxlength="13" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="pplOS">-->
+									
+										
+										in Rs.&nbsp;
+										as on
+
+										
+										
+<!--										<input type="text" name="pplOsAsOnDate" maxlength="10" size="20" value="" alt="pplOsAsOnDate">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.pplOsAsOnDate')" align="center">-->
+										
+										..........................
+									</td>
+								</tr>		
+
+
+
+									           
+							</table>			<!--end of term -->
+						
+				
+	<!--start of WC-->		
+									
+							<table width="100%" border="0" cellspacing="1" cellpadding="0" colspan="5">
+								 <TR>
+									<TD class="SubHeading" width="843"><b>Working Capital
+									</TD>						
+								</TR>				
+							
+										
+								<tr align="left"> 
+									<td class="ColumnBackground" height="28">&nbsp;
+										Interest Type
+									</td>
+									<td class="TableData" colspan="2">													
+									
+										<input type="radio" name="wcInterestType" value="T" >
+									
+										Fixed&nbsp;
+									
+										<input type="radio" name="wcInterestType" value="F">	
+									
+										Floating	
+									
+									
+										&nbsp;..........................<!--<input type="text" name="interestRate" maxlength="4" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="interestRate">-->
+										in %
+									</td>
+									<!--<td class="ColumnBackground" height="28" >&nbsp;
+										Benchmark PLR
+									</td>
+									<td class="TableData" height="28" width="160">&nbsp;
+										
+										<input type="text" name="benchMarkPLR" maxlength="3" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="benchMarkPLR">&nbsp;
+										
+										in %
+									</td>
+									<td class="ColumnBackground" height="28" >&nbsp;
+										Benchmark PLR
+									</td>-->
+									<td class="ColumnBackground" height="28" >&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Type of PLR
+									</td>
+									<td class="TableData" height="28" colspan="8">&nbsp;
+									....................................
+										
+<!--										<input type="text" name="wcTypeOfPLR" maxlength="50" size="30" value="" alt="wcTypeOfPLR">&nbsp;						-->
+									
+									</td>
+								</tr>
+								<tr align="left">
+									
+									<td width="25%" class="ColumnBackground"> <div align="left">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Prime Lending Rate (corresponding to the tenure of loan limit)</div>
+									</td>
+									<td class="TableData" colspan="2">
+										<div align="left"> 
+<!--											<input type="text" name="wcPlr" maxlength="5" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="wcPlr">&nbsp;-->
+										................... in % (p.a.)
+											
+										
+										</div>
+									</td>
+									<td width="25%" class="ColumnBackground"> <div align="left">&nbsp;
+										<font color="#FF0000" size="2">*</font>&nbsp;Interest Rate</div>
+									</td>
+									<td class="TableData" colspan="8">
+										<div align="left"> 
+<!--											<input type="text" name="limitFundBasedInterest" maxlength="5" size="5" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="limitFundBasedInterest">&nbsp;-->
+										...................
+											in % (p.a.)
+										
+										</div>
+									</td>
+
+								</tr>
+								<tr align="left">
+									<td class="ColumnBackground" rowspan="2" width="25%">
+										Limit Sanctioned
+										&nbsp;&nbsp;&nbsp;
+									</td>
+									<td class="TableData" width="15%">
+										&nbsp;Fund Based
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</TD>
+									<TD class="TableData" id="fundBasedLimitSanctioned" width="5%">
+											
+										&nbsp;&nbsp;
+									</TD>
+									<!--<TD class="TableData" >
+										Interest Rate		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+										<input type="text" name="limitFundBasedInterest" maxlength="5" size="7" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="limitFundBasedInterest">
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;
+									</TD>-->
+									<TD class="TableData" colspan="9">
+										<font color="#FF0000" size="2">*</font>&nbsp;Date of Sanction	&nbsp;
+										
+										...................
+<!--										<input type="text" name="limitFundBasedSanctionedDate" maxlength="10" size="7" value="" alt="limitFundbasedSanctionedDate">
+									<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.limitFundBasedSanctionedDate')" align="center">-->
+										
+										
+									</td>
+								</tr>
+								<tr>
+									<td class="TableData" width="15%">
+										&nbsp;Non Fund Based
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</TD>
+									<TD class="TableData" id="nonfundBasedLimitSanctioned" width="5%">
+											
+										&nbsp;&nbsp;
+									</TD>
+									<TD class="TableData" >
+										Commission		......................
+										
+									<!--	<input type="text" name="limitFundBasedInterest" maxlength="5" size="7" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="limitFundBasedInterest">
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;-->
+									</TD>
+									<TD class="TableData" colspan="9">
+										<font color="#FF0000" size="2">*</font>&nbsp;Date of Sanction	&nbsp;
+										...................
+
+								</tr>
+								<!--<td class="TableData" width="15%">
+										Non Fund Based	
+									</TD>
+								<TD class="TableData" id="nonFundBasedLimitSantioned" width="10%">
+									&nbsp;
+										
+									</TD>
+									<TD class="TableData">		
+										
+										Commission % p.a.		&nbsp;&nbsp
+										
+										<input type="text" name="limitNonFundBasedCommission" maxlength="5" size="7" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="limitNonFundBasedCommission">
+										&nbsp;&nbsp;
+										
+									</TD>
+									<TD class="TableData" colspan="5">
+										Date of Sanction	&nbsp;
+										
+										<input type="text" name="limitNonFundBasedSanctionedDate" maxlength="10" size="7" value="" alt="limitNonFundBasedSanctionedDate">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.limitNonFundBasedSanctionedDate')" align="center">
+										
+									</td>-->
+								<tr align="left">
+									<td class="ColumnBackground" rowspan="2">
+										Credit to be guaranteed
+										&nbsp;&nbsp;&nbsp;
+									</td>
+									<td class="TableData" colspan="11">
+										&nbsp;Fund Based						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+										
+<!--										<input type="text" name="creditFundBased" maxlength="13" size="10" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="creditFundBased">&nbsp;-->
+										....................................
+										in Rs.	
+										
+									</td>
+								</tr>
+								<tr>
+									<td class="TableData" colspan="11">
+										Non Fund Based						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+										
+<!--										<input type="text" name="creditFundBased" maxlength="13" size="10" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="creditFundBased">&nbsp;-->
+										....................................
+										in Rs.	
+										
+									</td>
+
+								</tr>
+
+								<!--tr align="left">
+									<td class="TableData" colspan="8">
+										Non Fund Based
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+										<input type="text" name="creditNonFundBased" maxlength="13" size="10" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="creditNonFundBased">&nbsp;
+										in Rs.	
+										
+									</td>
+								</tr>-->
+								
+								<tr align="left">
+									<td class="ColumnBackground" width="25%" colspan="15" height="25">&nbsp;
+										Outstanding Fund Based Facility
+									</td>
+								</tr>
+								<tr align="left">
+									<td class="TableData" colspan="12">
+									  <div align="center">
+										&nbsp;Amount&nbsp;
+<!--										<input type="text" name="osFundBasedPpl" maxlength="13" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="osFundBasedPpl">-->
+											....................................
+										in Rs.	
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<!--Interest&nbsp;
+									
+										<input type="text" name="osFundBasedInterestAmt" maxlength="13" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="osFundBasedInterestAmt">
+										in Rs.-->
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										As On		&nbsp;&nbsp;&nbsp;
+										....................................									
+<!--										<input type="text" name="osFundBasedAsOnDate" maxlength="10" size="10" value="" alt="osFundBasedAsOnDate">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.osFundBasedAsOnDate')" align="center">-->
+										
+										
+										</div>
+									</td>
+								</tr>
+								<tr align="left">
+									<td class="ColumnBackground" width="25%" colspan="9" height="25">&nbsp;
+										Outstanding Non Fund Based Facility
+									</td>
+								</tr>
+								<tr align="left">
+									<td class="TableData" colspan="9">
+									  <div align="center">		
+												Amount&nbsp;
+										.....................
+										
+		<!--										<input type="text" name="osNonFundBasedPpl" maxlength="13" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="osNonFundBasedPpl">
+										in Rs.	
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										Commission&nbsp;
+										.....................
+										
+<!--										<input type="text" name="osNonFundBasedCommissionAmt" maxlength="13" size="5" value="" onkeyup="isValidNumber(this)" onkeypress="return numbersOnly(this, event)" alt="osNonFundBasedCommissionAmt">
+										in Rs.-->
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										As On&nbsp;&nbsp;&nbsp;
+										.....................
+										
+<!--										<input type="text" name="osNonFundBasedAsOnDate" maxlength="10" size="10" value="" alt="osNonFundBasedAsOnDate">
+										<IMG src="images/CalendarIcon.gif" width="20" onClick="showCalendar('appForm.osNonFundBasedAsOnDate')" align="center">-->
+										
+										</div>
+									</td>
+								</tr>
+
+
+
+								
+							</table>			<!--end of WC-->
+						
+				
+<table width="100%" border="0" cellspacing="1" cellpadding="0" colspan="5">
+
+	<tr>
+		<td class="ColumnBackground" width="30%">
+			Spread Over PLR
+		</td>
+		<td class="TableData">
+		....................................
+<!--			<input type="text" name="spreadOverPLR" maxlength="4" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="spreadOverPLR">-->
+			
+		</td>
+		<td class="ColumnBackground">
+			&nbsp;&nbsp;Whether Repayment in Equal Instalments
+		</td>
+		<td class="TableData" colspan="4">
+		
+			<input type="radio" name="pplRepaymentInEqual" value="Y" >
+											
+			Yes&nbsp;&nbsp;			
+				<input type="radio" name="pplRepaymentInEqual" value="N">		
+			No
+		
+		</td>
+	</tr>	
+	<tr align="left">
+		<td class="ColumnBackground">
+			Tangible Net Worth
+		</td>
+		<td class="TableData">
+		....................................
+<!--			<input type="text" name="tangibleNetWorth" maxlength="13" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="tangibleNetWorth">-->
+		
+		</td>
+		<td class="ColumnBackground">
+			&nbsp;&nbsp;Fixed Asset Coverage Ratio
+		</td>
+		<td class="TableData">
+		....................................
+<!--			<input type="text" name="fixedACR" maxlength="2" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="fixedACR">-->
+		
+		</td>
+	</tr>
+	<tr align="left">
+		<td class="ColumnBackground">
+			Current Ratio
+		</td>
+		<td class="TableData" colspan="3">
+		....................................
+<!--			<input type="text" name="currentRatio" maxlength="5" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="currentRatio">-->
+		
+		</td>
+<!--		<td class="ColumnBackground">
+			&nbsp;&nbsp;Financial Particular of the Unit
+			<br><font color="#FF0000" size="1">&nbsp;
+				(Give projected Value for a new unit)
+				</font>						
+			</br>
+		</td>
+		<td class="TableData">
+		
+			<input type="text" name="financialPartUnit" maxlength="13" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="financialPartUnit">
+		
+		</td>-->
+	</tr>
+	<tr align="left">
+		<td class="ColumnBackground">
+			Minimum DSCR
+		</td>
+		<td class="TableData">
+		....................................
+<!--			<input type="text" name="minimumDSCR" maxlength="13" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="minimumDSCR">-->
+		
+		</td>
+		<td class="ColumnBackground">
+			&nbsp;&nbsp;Average DSCR
+		</td>
+		<td class="TableData">
+		....................................
+<!--			<input type="text" name="avgDSCR" maxlength="13" size="20" value="" onkeyup="isValidDecimal(this)" onkeypress="return decimalOnly(this, event)" alt="avgDSCR">-->
+		
+		</td>
+	</tr>
+</table>
+		
+							
+				<TABLE width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+					
+						
+					<tr align="left">
+						<td class="ColumnBackground" height="28" colspan="2">&nbsp;
+							Remarks
+						</td>
+						<td class="TableData" height="28" colspan="4">
+						...............................................................................................................
+<!--							<textarea name="remarks" cols="75" rows="4" alt="address"></textarea>	-->
+						</td>
+					</tr>	
+					<tr align="left">
+						<td class="ColumnBackground" height="28" colspan="2">&nbsp;
+						</td>
+						<td class="TableData" height="28" colspan="4">
+						...............................................................................................................
+<!--							<textarea name="remarks" cols="75" rows="4" alt="address"></textarea>	-->
+						</td>
+
+					</tr>
+
+					<tr align="left">
+						<td class="ColumnBackground" height="28" colspan="2">&nbsp;
+						</td>
+						<td class="TableData" height="28" colspan="4">
+						...............................................................................................................
+<!--							<textarea name="remarks" cols="75" rows="4" alt="address"></textarea>	-->
+						</td>
+
+					</tr>
+					
+					
+
+					
+<!--					<TR >
+						<TD align="center" valign="baseline" colspan="7">
+							<DIV align="center">
+								<A href="javascript:submitForm('addBothApp.do?method=submitApp')"><IMG src="images/Save.gif" alt="Save" width="49" height="37" border="0"></A>	
+								<A href="javascript:document.appForm.reset()">
+									<IMG src="images/Reset.gif" alt="Cancel" width="49" height="37" border="0"></A>
+								<A href="subHome.do?method=getSubMenu&menuIcon=AP&mainMenu=Guarantee For">
+								<IMG src="images/Cancel.gif" alt="Cancel" width="49" height="37" border="0"></A>
+						
+							</DIV>
+						</TD>
+					</TR>					-->
+				</TABLE>
+			</TD>
+			<TD width="20" background="images/TableVerticalRightBG.gif">
+				&nbsp;
+			</TD>
+		</TR>
+<!--		<TR>
+			<TD width="20" align="right" valign="top">
+				<IMG src="images/TableLeftBottom1.gif" width="20" height="15">
+			</TD>
+			<TD background="images/TableBackground2.gif">
+				&nbsp;
+			</TD>
+			<TD width="20" align="left" valign="top">
+				<IMG src="images/TableRightBottom1.gif" width="23" height="15">
+			</TD>
+		</TR>-->
+	</TABLE>
+</form>

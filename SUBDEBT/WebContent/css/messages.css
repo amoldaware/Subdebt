@@ -1,0 +1,14 @@
+* {margin:0; padding:0}
+body {font:12px Verdana, Arial, Helvetica, sans-serif; color:#000000}
+#wrapper {width:300px; margin:50px auto}
+.form {float:center; padding:0 10px 10px 10px; background:#f3f3f3; border:2px solid #cfcfcf}
+.form label {float:center; width:70px; padding:10px 10px 0 0; font-weight:bold}
+.form select {float:center; width:100px; margin-top:10px}
+.form input {float:center; }
+.form .submit {clear:both}
+#msg {display:none; z-index:200; padding-left:75px}
+#msgcontent {display:block; background:#65bdd5; border:2px solid #9d9d9d; border-left:none; padding:5px; min-width:150px; max-width:550px; float:center }
+
+
+
+

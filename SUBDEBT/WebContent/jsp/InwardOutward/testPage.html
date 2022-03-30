@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252"></meta>
+    <title>untitled1</title>
+<script type="text/javascript">
+function insRow()
+{
+var i=10;
+for(i=0;i<10;i++){
+   var x=document.getElementById('myTable').insertRow(i+4);
+   var a=x.insertCell(0);
+   var b=x.insertCell(1);
+   var c=x.insertCell(2);
+   var d=x.insertCell(3);
+   var e=x.insertCell(4);
+   a.innerHTML="NEW CELL1";
+   b.innerHTML="NEW CELL2";
+   c.innerHTML="NEW CELL3";
+   d.innerHTML="NEW CELL4";
+   e.innerHTML="NEW CELL5";
+   }
+}
+function go(dir) { 
+    var text = self.location.href;
+    var pos = text.indexOf('js');
+    var num = text.substring(pos+2,pos+5) - 0 + dir;
+    num = (num < 10) ? "00" + num : ( (num < 100) ? "0" + num : num);
+    window.location.href = text.substring(0,pos+2) +
+                           num +
+                           text.substring(pos+5,text.length);
+}
+
+</script>
+</head>
+
+<body>
+<table id="myTable" border="1">
+<tr>
+<td>Row1 cell1</td>
+<td>Row1 cell2</td>
+<td>Row1 cell3</td>
+<td>Row1 cell4</td>
+<td>Row1 cell5</td>
+</tr>
+<tr>
+<td>Row2 cell1</td>
+<td>Row2 cell2</td>
+<td>Row2 cell3</td>
+<td>Row2 cell4</td>
+<td>Row2 cell5</td>
+</tr>
+<tr>
+<td>Row3 cell1</td>
+<td>Row3 cell2</td>
+<td>Row3 cell3</td>
+<td>Row3 cell4</td>
+<td>Row3 cell5</td>
+</tr>
+<td>Row4 cell1</td>
+<td>Row4 cell2</td>
+<td>Row4 cell3</td>
+<td>Row4 cell4</td>
+<td>Row4 cell5</td>
+</tr>
+</table>
+<br /><TABLE WIDTH=100% BORDER=0>
+<TR>
+<TD><A HREF="JavaScript:go(-1)"><IMG WIDTH=80 HEIGHT=26 BORDER=0
+  ALT="previous" SRC="../images/prev.gif"></A></TD>
+
+<TD WIDTH=100%>&nbsp;<INPUT TYPE="button" VALUE="  BACK  " onClick="history.go(-1)">&nbsp;
+<input type="button" onclick="insRow()" value="Insert row">&nbsp;<INPUT TYPE="button" VALUE="FORWARD" onCLick="history.go(1)">
+</TD>
+
+<TD><A HREF="JavaScript:go(1)"><IMG WIDTH=80 HEIGHT=26 BORDER=0
+  ALT="next" SRC="../images/next.gif"></A></TD>
+</TR>
+<a href="javascript:history.back()">This produces a 
+text link that uses Javascript to trigger the browser's BACK button action</a>
+</TABLE>
+</body>
+</html>

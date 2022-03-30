@@ -1,0 +1,41 @@
+$(document).ready(function(){		
+			$(function() {
+				var moveLeft = 20;
+				var moveDown = 10;
+				  $('.recommondation').show(function(e) {
+					var id = $(this).attr('id');
+					alert('id:'+id);
+					$(#id).show()
+					//.css('top', e.pageY + moveDown)
+					//.css('left', e.pageX + moveLeft)
+					//.appendTo('body');
+				  }, function() {
+					$('.recommondation').hide();
+				  });
+				  $('a.recommondation').mousemove(function(e) {
+					$("div#helpdata").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+				});
+			});			
+		});
+		
+		
+		
+		$(document).ready(function(){		
+			$(function() {
+				var moveLeft = 20;
+				var moveDown = 10;
+				  $('.recommondation').hover(function(e) {
+					var id = $(this).attr('id');
+					alert('id:'+id);
+					$(#id).show()
+					//.css('top', e.pageY + moveDown)
+					//.css('left', e.pageX + moveLeft)
+					//.appendTo('body');
+				  }, function() {
+					$('.recommondation').hide();
+				  });
+				  $('a.recommondation').mousemove(function(e) {
+					$("div#helpdata").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+				});
+			});			
+		});

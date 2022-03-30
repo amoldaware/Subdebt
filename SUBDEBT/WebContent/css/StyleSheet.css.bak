@@ -1,0 +1,305 @@
+.TableData {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.TableDataCenter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: center;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.ColumnBackground {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+
+.ColumnBackground1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ColumnBackgroundNoFont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.CGTSIInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4pts;
+	color: #FF0000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+
+.GOIInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3pts;
+	color: #FF0000;
+	background-color: #C4DEE6;
+	font-weight: bolder;
+}
+
+.IFrameStyle {
+			width:875px;
+			maxwidth:900px;	
+			height:400px;
+			maxheight:400px;	
+			scroll:auto;
+}
+
+.NaviStyle {
+			width:775px;
+			maxwidth:775px;	
+			height:20px;
+			maxheight:20px;	
+}
+
+.SubHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	color: #CC3300; 
+	background-color: #FFFFFF; 
+	font-weight: bold 
+}
+.Heading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #65bdd5; 
+	font-weight: bold
+}
+
+
+
+.Top {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left;
+	background-color: #f6dad6;
+	font-weight: bold;
+}
+
+.FontStyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+
+BODY INPUT{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+BODY TEXTAREA{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	vertical-align: text-top;
+}
+.User{
+	font-family: Courier-New; 
+	font-size=10pt;
+	text-align: left;
+	background-color: #f6dad6;
+	font-weight=bold
+}
+.MemberInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: bottom;
+	background-color: #EEB5AD;
+}
+
+.Footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #FFFFFF;
+	background-color: #000F81;
+}
+.FooterMember {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEB5AD;
+	font-weight=bold;
+	text-align: bottom;
+}
+
+.MainMenu{
+	width: 205px;
+	font-size: 15px;
+}
+.SubMenu{
+	width: 175px;
+	font-size: 15px;
+}
+.Processing{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399
+}
+.HeadingBg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	left: 1px;
+
+}
+.PVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #FF0000; 
+	font-weight: bold
+}
+
+.JVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #FFFF00; 
+	font-weight: bold
+}
+.RVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #339900; 
+	font-weight: bold
+}
+
+.ColumnBackgroundRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+.HeadingBgRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	left: 1px;
+
+}
+.TableDataRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.HelpData {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.DanReport {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt;
+	color: #FF0000; 
+	background-color: #FFFFFF; 
+	font-weight: bold 
+}
+/*  added by sudeep@pathinfotech.com on 3-11-2006 */
+.Heading1 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #004381;
+	background-color: #FFFFFF; 
+	font-weight: bold
+}
+
+ .outertable{
+				page-break-after:always
+             }   
+ .break { page-break-before: always; }

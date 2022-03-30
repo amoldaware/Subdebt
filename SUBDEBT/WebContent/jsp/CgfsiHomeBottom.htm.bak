@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<title>Credit Guarantee Fund Trust for Small Industries - Home</title>
+<SCRIPT language="JavaScript" type="text/JavaScript" src="/Intra/js/CGTSI.js">
+</SCRIPT>
+
+<script>
+
+	function submitTop(action)
+	{
+		document.home.action=action;
+		document.home.target="_top";
+		document.home.submit();
+	}
+function openNewWindow()
+{
+window.open("cgfsiLogin.htm","LoginPage","height=600,width=800 ,screenX=0,screenY=0,left=0,top=0,toolbar=no,resizable=yes,scrollbars=yes");
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" bottommargin="0" rightmargin="0" smarginheight="0"
+link="#0000FF" marginwidth="0" marginheight="0" width="100%" vlink="#FF0000"
+bgcolor="#EAEAD5" alink="#FF0000">
+
+<form name="home">
+  <table border="0" width="101%" height="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="34%" align="right" bgcolor="#EAEAD5"></td>
+      <td width="34%" align="right" bgcolor="#EAEAD5"></td>
+      <td width="32%" align="center" bgcolor="#EAEAD5"><div align="left"><p>
+&nbsp;
+<!--
+<font
+      color="#804040"><strong>Search</strong></font><input type="text" name="T2" size="15"><img
+      src="orange_go.gif" width="21" height="21" alt="orange_go.gif (1124 bytes)">
+-->
+</td>
+    </tr>
+    <tr align="center">
+      <td width="33%" height="256" valign="top" style="margin-top: 22px" rowspan="4"
+      bgcolor="#EAEAD5"><div align="center"><center><p><img src="CgfsiLogo.gif" width="147"
+      height="152" alt="CgfsiLogo.gif (20874 bytes)"></td>
+      <td width="41%" height="1" valign="top" align="center" rowspan="6" bgcolor="#EAEAD5"><div
+      align="center"><center><p><BR><BR><br><strong><font color="#800000"><big>
+<table>
+<tr>
+<td align="center">
+<strong><font color="#800000"><big>
+Credit Guarantee Fund Trust for Micro and Small Enterprises
+</big></strong>
+</td>
+</tr>
+<tr>
+<td  align="center">
+<strong><font color="#800000"><big>
+Set up by
+</big></strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong><font color="#800000"><big>
+Government of India
+</big></strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong><font color="#800000"><big>
+&
+</big></strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong><font color="#800000"><big>
+Small Industries Development Bank of India
+</big></strong>
+</td>
+</tr>
+</table>
+
+
+</td>
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"></td>
+    </tr>
+    <tr align="center">
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"><a
+      href="javascript:submitTop('./Index.jsp')"><img src="MembersLoginAnimation.gif" width="110" height="32"
+      alt="MembersLoginAnimation.gif (1853 bytes)" border="0"></a></td>
+    </tr>
+    <tr align="center">
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"><div
+      align="center"><center><p><a href="RegisterNowFrame.htm" target="_parent"><img src="RegNow.gif"
+      width="110" height="32" alt="RegNow.gif (17359 bytes)" border="0"></a></td>
+    </tr>
+    <tr align="center">
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"><div
+      align="center"><center><p><a href="WhatsNewFrame.htm" target="_parent"><img src="CEO'sDesk.gif" border=0></a></td>
+    </tr>
+    <tr align="center">
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"></td>
+    </tr>
+    <tr align="center">
+      <td width="33%" height="128" valign="top" style="margin-top: 22px" rowspan="2"
+      bgcolor="#EAEAD5"><a href="CEO'sMessageFrame.htm" target="_parent" style="text-decoration: none">&nbsp; <strong><font color="#004040"><big>Chairman's
+      &nbsp;Message</big></font></strong></a></td>
+      <td width="27%" height="10" valign="middle" align="center" bgcolor="#EAEAD5"></td>
+    </tr>
+    <tr align="center">
+      <td width="27%" height="9" valign="middle" align="center" bgcolor="#EAEAD5"></td>
+    </tr>
+  </table>
+  <hr align="center" color="#008080" size="1">
+  <div align="center"><center><table border="0" width="775" cellspacing="0" cellpadding="0"
+  height="16">
+    <tr>
+      <td height="9" vAlign="top" width="564" align="center"><div align="right"><p><a
+      href="SiteMapFrame.htm" target="_parent" style="color: rgb(0,0,0)"><font valign="top"><small><strong>Site
+      Map</strong></small></font></a><img src="glowingarrow.gif" width="20" height="20"
+      alt="glowingarrow.gif (207 bytes)"></td>
+      <td height="9" vAlign="top" width="83" align="left"><a href="ContactUsFrame.htm"
+      style="color: rgb(0,0,0)" target="_parent"><small><strong>Contact Us</strong></small></a><img
+      src="glowingarrow.gif" width="20" height="20" alt="glowingarrow.gif (207 bytes)"></td>
+      <td height="9" vAlign="top" width="83" align="center"><div align="center"><center><p>
+      <a href="CgfsiHomeFrame.htm" style="color: rgb(0,0,0)" target="_parent" target="_parent"><small><strong>Home</strong></small></a><img
+      src="glowingarrow.gif" width="20" height="20" alt="glowingarrow.gif (207 bytes)"></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><table border="0" width="100%" cellspacing="0"
+  cellpadding="0" height="136">
+    <tr>
+      <td width="100%" align="center" height="136">&nbsp;<p><font face="Arial" size="1">[This site was revised on 25-sep-2000]<br>Best viewed in
+      800 * 600 resolution on IE 4.0 + browsers.<br>
+      Designed and developed by Satyam Computer services Ltd.,<a href="DevelopersInfo.htm"
+      target="parent" style="color: rgb(0,0,128)">Financial Services Division</a>,Chennai.<br>
+      <a target="main" style="color: rgb(0,0,128)" href="Disclaimer.htm">DisClaimer <br>
+      </a>Copyright © Credit Guarantee Fund Trust for Small Industries. All rights reserved.</font></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>

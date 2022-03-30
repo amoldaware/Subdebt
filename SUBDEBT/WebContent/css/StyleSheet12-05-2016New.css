@@ -1,0 +1,402 @@
+.errorsMessage {
+	background-color:#F6D8CE;
+	 font-weight: bold;
+	COLOR:  #8B0000;
+	width:674px;
+	margin-bottom:9px;
+	text-align: center;
+}
+.errorsMessage li{ 
+	list-style: none; 
+}
+
+.TableData {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.TableDataCenter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: center;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.ColumnBackground {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+
+.ColumnBackground1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ColumnBackgroundNoFont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.CGTSIInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4pts;
+	color: #FF0000;
+	background-color: #C4DEE6;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+
+.GOIInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3pts;
+	color: #FF0000;
+	background-color: #C4DEE6;
+	font-weight: bolder;
+}
+
+.IFrameStyle {
+			width:1024px;
+			max-width: 1200px;
+			height:375px;
+			max-height: 600px;	
+			
+}
+
+.NaviStyle {
+			width:775px;
+			max-width:775px;	
+			height:20px;
+			max-height:20px;	
+}
+
+.SubHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 8pt;
+	color: #CC3300; 
+	background-color: #FFFFFF; 
+	font-weight: bold 
+}
+.Heading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #65bdd5; 
+	font-weight: bold
+}
+
+.HeadingRecovery {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #004381;
+	background-color: #65bdd5; 
+	font-weight: bold
+}
+
+
+
+.Top {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left;
+	background-color: #f6dad6;
+	font-weight: bold;
+}
+
+.FontStyle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+
+BODY INPUT{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+BODY TEXTAREA{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	vertical-align: text-top;
+}
+.User{
+	font-family: Courier-New; 
+	font-size: 10pt;
+	text-align: left;
+	background-color: #f6dad6;
+	font-weight: bold;
+}
+.MemberInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: justify;
+	background-color: #EEB5AD;
+}
+
+.Footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #FFFFFF;
+	background-color: #000F81;
+}
+.FooterMember {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEB5AD;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.MainMenu{
+	width: 205px;
+	font-size: 15px;
+}
+.SubMenu{
+	width: 175px;
+	font-size: 15px;
+}
+.Processing{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399
+}
+.HeadingBg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	left: 1px;
+
+}
+.PVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #FF0000; 
+	font-weight: bold
+}
+
+.JVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #FFFF00; 
+	font-weight: bold
+}
+.RVHeading {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #004381;
+	background-color: #339900; 
+	font-weight: bold
+}
+
+.ColumnBackgroundRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C4DEE6;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bolder;
+}
+.HeadingBgRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	left: 1px;
+
+}
+.TableDataRight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: right;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.HelpData {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: left;
+	vertical-align: text-top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	left: 1px;
+}
+
+.DanReport {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10pt;
+	color: #FF0000; 
+	background-color: #FFFFFF; 
+	font-weight: bold 
+}
+/*  added by sudeep@pathinfotech.com on 3-11-2006 */
+.Heading1 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #004381;
+	background-color: #FFFFFF; 
+	font-weight: bold
+}
+
+ .outertable{
+				page-break-after:always;
+             }   
+ .break { page-break-before: always; }
+ 
+ 
+ 
+ .button {
+   border: 1px solid #0a3c59;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   padding: 1px 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06426c;
+   font-size: 12px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: center;
+   }
+.button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+   
+   
+   .TableDataRecovery {
+	
+	color: #000000;
+	background-color: #D2E7EC;
+	text-align: left;
+	vertical-align: text-top;
+	
+}
+
+ div#content {
+    display: none;
+    }
+ 
+div#loading {
+    top: 100 px;
+   /* margin: auto;*/
+    position: fixed;
+    z-index: 1000;
+    width: 478px;
+    height: 70px;
+   /* background: url(359.gif) no-repeat; */
+   background: url(359.gif) 80% 70% no-repeat rgb(249,249,249);
+  /*  cursor: wait; */
+  
+    }

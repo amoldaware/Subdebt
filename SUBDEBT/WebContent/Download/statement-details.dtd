@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<!--
+    DTD for uploading statement details
+-->
+<!ENTITY % CrOrDr "#PCDATA">
+<!ELEMENT statement-details (statement-summary,transactions+)>
+<!ELEMENT statement-summary EMPTY> 
+<!ATTLIST statement-summary
+		bankname 	CDATA 	#REQUIRED
+		accountNumber 	CDATA 	#REQUIRED 
+		statementDate 	CDATA 	#REQUIRED
+		openingBalance 	CDATA 	#REQUIRED 
+		closingBalance 	CDATA 	#REQUIRED>
+
+<!ELEMENT transactions (
+		transactionDate,
+		particulars,
+		valueDate?,
+		debitOrCredit,
+	        withdrawals,
+		deposits,
+		transactionId,
+		chequeNumber?)>
+		
+<!ELEMENT transactionDate (#PCDATA)>
+<!ELEMENT particulars (#PCDATA)>
+<!ELEMENT valueDate (#PCDATA)>
+<!ELEMENT debitOrCredit (%CrOrDr;) >
+<!ELEMENT withdrawals (#PCDATA)>
+<!ELEMENT deposits (#PCDATA)>
+<!ELEMENT transactionId (#PCDATA)>
+<!ELEMENT chequeNumber (#PCDATA)>
+
+
+
